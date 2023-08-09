@@ -6,7 +6,7 @@ import resume from '../assets/pdf/Ben_DeSollar_Resume.pdf';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        margin: theme.spacing(3),
+        margin: theme.spacing(5),
     },
     paper: {
         padding: theme.spacing(2),
