@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         padding: theme.spacing(2),
         textAlign: 'center',
-        color: theme.palette.text.secondary,
         boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.5)', // Adjust shadow as desired
     },
     button: {
