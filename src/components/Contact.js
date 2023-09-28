@@ -30,6 +30,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)", // Adjust shadow as desired
   },
+  contactTitle: {
+    textAlign: "center",
+    justifyContent: "center",
+    // Make title bold
+    fontWeight: "bold",
+  },
 }));
 
 function Contact() {
@@ -41,7 +47,7 @@ function Contact() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <Typography variant="h6" gutterBottom>
+            <Typography className={classes.contactTitle} variant="h5" gutterBottom>
               Contact Me
             </Typography>
             <p>You can also find me on:</p>

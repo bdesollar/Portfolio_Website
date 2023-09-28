@@ -12,6 +12,10 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: "#fff", // Change the color of the text to white
+  },
+  appBar: {
+    background: "linear-gradient(45deg, #000000 30%, #FFFFFF 90%)", // Add gradient background
   },
 }));
 
@@ -20,7 +24,7 @@ function Navbar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="transparent">
+      <AppBar position="static" color="transparent" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Benjamin R DeSollar

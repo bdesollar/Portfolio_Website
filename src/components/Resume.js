@@ -19,6 +19,12 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "33%",
     marginRight: "33%",
   },
+  resumeTitle: {
+    textAlign: "center",
+    justifyContent: "center",
+    // Make title bold
+    fontWeight: "bold",
+  },
 }));
 
 function Resume() {
@@ -29,7 +35,7 @@ function Resume() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" gutterBottom>
+            <Typography className={classes.resumeTitle} variant="h5" gutterBottom>
               Resume
             </Typography>
             <Typography variant="body1" gutterBottom>

@@ -20,6 +20,12 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
   },
+  projectTitle: {
+    textAlign: "center",
+    justifyContent: "center",
+    // Make title bold
+    fontWeight: "bold",
+  },
 }));
 
 function Projects() {
@@ -61,7 +67,7 @@ function Projects() {
 
   return (
     <Element name="projects" className={classes.root}>
-      <Typography variant="h6" gutterBottom>
+      <Typography className={classes.projectTitle} variant="h5" gutterBottom>
         Projects
       </Typography>
       <Grid container spacing={3}>
