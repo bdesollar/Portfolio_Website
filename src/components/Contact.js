@@ -47,7 +47,11 @@ function Contact() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <Typography className={classes.contactTitle} variant="h5" gutterBottom>
+            <Typography
+              className={classes.contactTitle}
+              variant="h5"
+              gutterBottom
+            >
               Contact Me
             </Typography>
             <p>You can also find me on:</p>

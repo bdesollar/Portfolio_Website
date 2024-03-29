@@ -1,6 +1,13 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { Typography, Grid, Card, CardContent, Avatar, Container } from "@material-ui/core";
+import {
+  Typography,
+  Grid,
+  Card,
+  CardContent,
+  Avatar,
+  Container,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import profilePicture from "../assets/img/profile.jpeg"; // Adjust the path to your image
 
@@ -54,19 +61,52 @@ function About() {
                 className={classes.profileImage}
               />
               <CardContent className={classes.cardContent}>
-                <Typography className={classes.aboutMeTitle} variant="h5" gutterBottom>
-                    About Me
+                <Typography
+                  className={classes.aboutMeTitle}
+                  variant="h5"
+                  gutterBottom
+                >
+                  About Me
                 </Typography>
-                <Typography className={classes.aboutMe} variant="body1" gutterBottom>
-                    I’m Benjamin DeSollar, a graduate student at the University of Iowa pursuing a Master's in Electrical and Computer Engineering. My work in machine learning has led to breakthroughs in audiology gene research with an 80% predictive accuracy rate. Beyond research, my experience at AMD and John Deere has honed my ability to translate technical insights into compelling business value—ideal for roles in technical sales and solutions engineering.
+                <Typography
+                  className={classes.aboutMe}
+                  variant="body1"
+                  gutterBottom
+                >
+                  I’m Benjamin DeSollar, a graduate student at the University of
+                  Iowa pursuing a Master's in Electrical and Computer
+                  Engineering. My work in machine learning has led to
+                  breakthroughs in audiology gene research with an 80%
+                  predictive accuracy rate. Beyond research, my experience at
+                  AMD and John Deere has honed my ability to translate technical
+                  insights into compelling business value—ideal for roles in
+                  technical sales and solutions engineering.
                 </Typography>
-                <Typography className={classes.aboutMe} variant="body1" gutterBottom>
-                    My leadership skills are proven. As a Teaching Assistant, I have helped more than 600 students improve their software design skills. Moreover, I have led multidisciplinary engineering teams in competitive environments such as SpaceX Hyperloop. These experiences have equipped me with the essential soft skills required for effective communication with customers.
+                <Typography
+                  className={classes.aboutMe}
+                  variant="body1"
+                  gutterBottom
+                >
+                  My leadership skills are proven. As a Teaching Assistant, I
+                  have helped more than 600 students improve their software
+                  design skills. Moreover, I have led multidisciplinary
+                  engineering teams in competitive environments such as SpaceX
+                  Hyperloop. These experiences have equipped me with the
+                  essential soft skills required for effective communication
+                  with customers.
                 </Typography>
-                <Typography className={classes.aboutMe} variant="body1" gutterBottom>
-                    I also possess entrepreneurial initiative, demonstrated by founding BRDBOX and leading Notably to a first-place finish at a university-wide hackathon. My diverse skill set spans technical mastery and stakeholder engagement, making me well-suited for a range of roles within the tech industry.
+                <Typography
+                  className={classes.aboutMe}
+                  variant="body1"
+                  gutterBottom
+                >
+                  I also possess entrepreneurial initiative, demonstrated by
+                  founding BRDBOX and leading Notably to a first-place finish at
+                  a university-wide hackathon. My diverse skill set spans
+                  technical mastery and stakeholder engagement, making me
+                  well-suited for a range of roles within the tech industry.
                 </Typography>
-                </CardContent>
+              </CardContent>
             </Card>
           </Grid>
         </Grid>

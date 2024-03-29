@@ -35,7 +35,11 @@ function Resume() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={3} className={classes.paper}>
-            <Typography className={classes.resumeTitle} variant="h5" gutterBottom>
+            <Typography
+              className={classes.resumeTitle}
+              variant="h5"
+              gutterBottom
+            >
               Resume
             </Typography>
             <Typography variant="body1" gutterBottom>

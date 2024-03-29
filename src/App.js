@@ -1,11 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./Navbar";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import MainContent from "./components/MainContent";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
@@ -32,12 +28,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Navbar />
-        <About />
-        <Resume />
-        <Projects />
-        <Contact />
-        <Footer />
+        <MainContent /> {/* Use the MainContent component here */}
       </Router>
     </ThemeProvider>
   );
