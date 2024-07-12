@@ -1,90 +1,65 @@
-body {
+@import './styles/variables.css';
+
+/* Reset some default browser styles */
+* {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
-  color: #ccc;
+  box-sizing: border-box;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Add some padding and center the content */
-.container {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Style the cards */
-.card {
-  margin: 20px;
+html, body {
+  height: 100%;
   width: 100%;
-  max-width: 600px;
-  background-color: #333;
-  color: #ccc;
+  font-family: var(--font-family); /* Use a clean, modern font */
+  scroll-behavior: smooth; /* Ensure smooth scrolling */
+  background-color: var(--secondary-color); /* Light grey background for the entire app */
+  color: var(--primary-color); /* Dark grey text color */
 }
 
-/* Style the AppBar */
-.AppBar {
-  background-color: #333;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Style the buttons */
-.button {
-  margin: 10px;
-  color: #ccc;
-  border-color: #ccc;
+button {
+  cursor: pointer;
 }
 
-.button:hover {
-  color: #61dafb;
-  border-color: #61dafb;
+.container {
+  padding: 16px;
 }
-body {
-  font-family: "Roboto", sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 16px 0;
 }
-html {
-  scroll-behavior: smooth;
+
+p {
+  margin: 8px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mainContent {
+  padding-top: 64px; /* Adjust based on the height of your navbar */
+  padding-bottom: 80px; /* Ensure there's space for the footer */
+}
+
+/* Fade-in and fade-out animations */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.section {
+  padding: 80px 0; /* Add spacing between sections */
+  width: 100%; /* Ensure full width */
 }

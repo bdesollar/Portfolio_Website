@@ -1,0 +1,33 @@
+.root {
+  height: 600px !important;
+  width: 500px !important;
+  position: relative !important;
+}
+
+.media {
+  height: 300px !important;
+  width: 100% !important;
+}
+
+.cardActions {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+.modal {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.modalImage {
+  max-height: 90% !important;
+  max-width: 90% !important;
+}
+
+.techStack {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}

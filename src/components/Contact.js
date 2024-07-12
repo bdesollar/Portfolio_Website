@@ -10,48 +10,19 @@ import {
   IconButton,
 } from "@material-ui/core";
 import { useForm, ValidationError } from "@formspree/react";
-import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-
-const useStyles = makeStyles((theme) => ({
-  contact: {
-    margin: theme.spacing(5),
-    marginBottom: theme.spacing(10),
-  },
-  form: {
-    "& .MuiTextField-root": {
-      margin: theme.spacing(1),
-      width: "25ch",
-    },
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)", // Adjust shadow as desired
-  },
-  contactTitle: {
-    textAlign: "center",
-    justifyContent: "center",
-    // Make title bold
-    fontWeight: "bold",
-  },
-}));
+import "../styles/Contact.css";
 
 function Contact() {
-  const classes = useStyles();
   const [state, handleSubmit] = useForm("xknljonv");
 
   return (
-    <Element name="contact" className={classes.contact}>
+    <Element name="contact" className="section">
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>
-            <Typography
-              className={classes.contactTitle}
-              variant="h5"
-              gutterBottom
-            >
+          <Paper className="paper">
+            <Typography className="contactTitle" variant="h5" gutterBottom>
               Contact Me
             </Typography>
             <p>You can also find me on:</p>
@@ -88,7 +59,7 @@ function Contact() {
                 opportunities!
               </p>
             )}
-            <form className={classes.form} onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
               <div>
                 <TextField required id="name" name="name" label="Name" />
                 <ValidationError
