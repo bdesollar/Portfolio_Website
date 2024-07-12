@@ -48,16 +48,19 @@ img {
   height: auto;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .mainContent {
+  flex: 1;
   padding-top: 64px; /* Adjust based on the height of your navbar */
   padding-bottom: 80px; /* Ensure there's space for the footer */
-  min-height: calc(100vh - 144px); /* Ensure the footer is at the bottom */
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   background-color: #000;
   color: #fff;
   text-align: center;
