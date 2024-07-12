@@ -1,4 +1,4 @@
-@import './styles/variables.css';
+@import "./styles/variables.css";
 
 /* Reset some default browser styles */
 * {
@@ -7,13 +7,14 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: var(--font-family); /* Use a clean, modern font */
   scroll-behavior: smooth; /* Ensure smooth scrolling */
-  background-color: var(--secondary-color); /* Light grey background for the entire app */
-  color: var(--primary-color); /* Dark grey text color */
+  background-color: #fff; /* White background for the entire app */
+  color: #000; /* Black text color */
 }
 
 a {
@@ -29,7 +30,12 @@ button {
   padding: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 16px 0;
 }
 
@@ -45,21 +51,66 @@ img {
 .mainContent {
   padding-top: 64px; /* Adjust based on the height of your navbar */
   padding-bottom: 80px; /* Ensure there's space for the footer */
+  min-height: calc(100vh - 144px); /* Ensure the footer is at the bottom */
 }
 
-/* Fade-in and fade-out animations */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .section {
   padding: 80px 0; /* Add spacing between sections */
   width: 100%; /* Ensure full width */
+}
+
+.socialIcons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.socialIcons .MuiIconButton-root {
+  color: #fff;
+}
+
+.chatBubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chatBubble .MuiSvgIcon-root {
+  color: #fff;
+}
+
+.chatBox {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  display: none;
+}
+
+.chatBox.open {
+  display: block;
 }

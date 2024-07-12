@@ -1,13 +1,68 @@
 .section {
-  padding: 80px 0; /* Add spacing between sections */
+  padding: 100px 0; /* Add more spacing between sections */
   text-align: center;
+  background: #fff; /* White background for better readability */
+}
+
+.homeSection {
+  padding: 20px;
 }
 
 .homeTitle {
   font-weight: bold;
-  color: #000 !important;
+  color: #000 !important; /* Black color for better contrast */
+  margin-bottom: 20px;
 }
 
 .homeSubtitle {
-  color: #555 !important;
+  color: #000 !important; /* Black color for subtitle */
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #000 !important; /* Black color for description */
+  margin-bottom: 20px;
+}
+
+.funnyQuote {
+  color: #555 !important; /* Grey color for the quote */
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.profileImageLarge {
+  width: 450px !important;
+  height: 450px !important;
+  margin: 0 auto 20px auto !important; /* Add margin below the image */
+}
+
+.socialIcons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.socialIcons .MuiIconButton-root {
+  color: #fff;
+}
+
+.chatBubble {
+  position: fixed;
+  bottom: 10px !important;
+  right: 20px;
+  background-color: #ffffff !important;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2000; /* Ensure this is higher than the footer */
+}
+
+.chatBubble .MuiSvgIcon-root {
+  color: #000000 !important;
 }

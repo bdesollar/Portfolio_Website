@@ -1,24 +1,26 @@
 .section {
-  padding: 80px 0; /* Add spacing between sections */
+  padding: 100px 0; /* Add more spacing between sections */
   text-align: center;
+  background: #fff; /* White background for better readability */
 }
 
-.card {
-  padding: 16px !important;
-  text-align: center !important;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5) !important; /* Adjust shadow as desired */
+.aboutSection {
+  padding: 20px;
 }
 
 .profileImage {
   width: 150px !important;
   height: 150px !important;
-  margin: 0 auto !important;
+  margin: 0 auto 20px auto !important; /* Add margin below the image */
 }
 
 .aboutMeTitle {
   font-weight: bold !important;
+  margin-bottom: 20px;
+  color: #000 !important; /* Black color for title */
 }
 
 .aboutMe {
   margin-top: 16px !important;
+  color: #000 !important; /* Black color for text */
 }

@@ -1,17 +1,15 @@
 import React from "react";
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { Typography, Container } from "@material-ui/core";
 import "../styles/Footer.css";
 
 function Footer() {
   return (
     <footer className="footer">
-      <AppBar position="static" color="primary" className="appBarFooter">
-        <Toolbar>
-          <Typography variant="body1" color="inherit" className="grow">
-            © 2024 Benjamin R DeSollar
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Container maxWidth="xl">
+        <Typography variant="body1" align="center">
+          © 2024 Benjamin DeSollar. All rights reserved.
+        </Typography>
+      </Container>
     </footer>
   );
 }

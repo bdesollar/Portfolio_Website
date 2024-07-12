@@ -1,30 +1,38 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
-import '../styles/Navbar.css';
+import React from "react";
+import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <AppBar position="fixed" className="appBar">
+    <AppBar position="static" style={{ backgroundColor: "#000" }}>
       <Toolbar>
-        <Typography variant="h6" className="title">
-          Benjamin R DeSollar
+        <Typography variant="h6" style={{ flexGrow: 1, color: "#fff" }}>
+          My Portfolio
         </Typography>
-        <Link to="home" smooth={true} duration={100}>
-          <Button className="navButton">Home</Button>
-        </Link>
-        <Link to="about" smooth={true} duration={100}>
-          <Button className="navButton">About</Button>
-        </Link>
-        <Link to="resume" smooth={true} duration={100}>
-          <Button className="navButton">Resume</Button>
-        </Link>
-        <Link to="projects" smooth={true} duration={100}>
-          <Button className="navButton">Projects</Button>
-        </Link>
-        <Link to="contact" smooth={true} duration={100}>
-          <Button className="navButton">Contact</Button>
-        </Link>
+        <Button
+          color="inherit"
+          component={Link}
+          to="/"
+          style={{ color: "#fff" }}
+        >
+          Home
+        </Button>
+        <Button
+          color="inherit"
+          component={Link}
+          to="/resume"
+          style={{ color: "#fff" }}
+        >
+          Resume
+        </Button>
+        <Button
+          color="inherit"
+          component={Link}
+          to="/projects"
+          style={{ color: "#fff" }}
+        >
+          Projects
+        </Button>
       </Toolbar>
     </AppBar>
   );
