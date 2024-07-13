@@ -20,6 +20,14 @@ function Navbar() {
         <Button
           color="inherit"
           component={Link}
+          to="/about"
+          style={{ color: "#fff" }}
+        >
+          About
+        </Button>
+        <Button
+          color="inherit"
+          component={Link}
           to="/resume"
           style={{ color: "#fff" }}
         >

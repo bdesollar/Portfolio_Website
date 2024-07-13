@@ -65,12 +65,11 @@ function Resume() {
               <Typography variant="body1" className="sectionContent">
                 <strong>AMD, Fort Collins, CO</strong> <br />
                 Software Engineer Intern <br />
-                <em>May 2023 - Aug 2023</em> <br />
-                • Unified three apps into one interface, boosting efficiency by
-                60% and effectively communicating benefits to stakeholders.{" "}
-                <br />• Collaborated cross-functionally to develop debugging
-                tools that streamlined debugging processes across all business
-                units.
+                <em>May 2023 - Aug 2023</em> <br />• Unified three apps into one
+                interface, boosting efficiency by 60% and effectively
+                communicating benefits to stakeholders. <br />• Collaborated
+                cross-functionally to develop debugging tools that streamlined
+                debugging processes across all business units.
               </Typography>
               <Typography variant="body1" className="sectionContent">
                 <strong>John Deere, Moline, IL</strong> <br />

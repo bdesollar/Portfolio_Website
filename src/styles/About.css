@@ -6,12 +6,15 @@
 
 .aboutSection {
   padding: 20px;
+  text-align: left; /* Align text to the left */
 }
 
 .profileImage {
-  width: 150px !important;
-  height: 150px !important;
-  margin: 0 auto 20px auto !important; /* Add margin below the image */
+  width: 100%; /* Make the image responsive */
+  max-width: 100%; /* Set a maximum width */
+  height: auto;
+  margin: 0 auto 20px auto; /* Add margin below the image */
+  display: block;
 }
 
 .aboutMeTitle {
@@ -23,4 +26,28 @@
 .aboutMe {
   margin-top: 16px !important;
   color: #000 !important; /* Black color for text */
+}
+
+.hobbiesSection,
+.interestsSection {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.sectionTitle {
+  font-weight: bold !important;
+  margin-bottom: 20px;
+  color: #000 !important; /* Black color for title */
+}
+
+.hobbyItem,
+.interestItem {
+  text-align: center;
+}
+
+.hobbyIcon,
+.interestIcon {
+  font-size: 48px !important;
+  color: #000 !important; /* Black color for icons */
+  margin-bottom: 10px;
 }
