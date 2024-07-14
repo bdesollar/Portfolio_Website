@@ -56,8 +56,6 @@ img {
 
 .mainContent {
   flex: 1;
-  padding-top: 64px; /* Adjust based on the height of your navbar */
-  padding-bottom: 80px; /* Ensure there's space for the footer */
 }
 
 .footer {

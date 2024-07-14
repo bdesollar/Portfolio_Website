@@ -1,7 +1,15 @@
-.section {
-  padding: 100px 0; /* Add more spacing between sections */
-  text-align: center;
-  background: #fff; /* White background for better readability */
+.home-section {
+  background-image: url("../assets/img/homeBackground.jpg"); /* Add a background image */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  min-height: calc(
+    100vh - 64px - 20px
+  ); /* Ensure the section takes up the full viewport height minus the navbar and footer heights */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeSection {
@@ -17,17 +25,20 @@
 .homeSubtitle {
   color: #000 !important; /* Black color for subtitle */
   margin-bottom: 20px;
+  font-size: 2.5em !important; /* Larger font size for the subtitle */
 }
 
 .description {
   color: #000 !important; /* Black color for description */
   margin-bottom: 20px;
+  font-size: 1.5em !important; /* Larger font size for the subtitle */
 }
 
 .funnyQuote {
-  color: #555 !important; /* Grey color for the quote */
+  color: #272727 !important; /* Grey color for the quote */
   font-style: italic;
   margin-top: 20px;
+  font-size: 1.2em !important; /* Larger font size for the subtitle */
 }
 
 .profileImageLarge {

@@ -1,7 +1,17 @@
-.section {
+.about-section {
   padding: 100px 0; /* Add more spacing between sections */
   text-align: center;
-  background: #fff; /* White background for better readability */
+  background-image: url("../assets/img/aboutBackground.jpg"); /* Add a background image */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  min-height: calc(
+    100vh - 64px - 80px
+  ); /* Ensure the section takes up the full viewport height minus the navbar and footer heights */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutSection {
@@ -12,6 +22,7 @@
 .profileImage {
   width: 100%; /* Make the image responsive */
   max-width: 100%; /* Set a maximum width */
+  border-radius: 10% !important;
   height: auto;
   margin: 0 auto 20px auto; /* Add margin below the image */
   display: block;
@@ -20,12 +31,14 @@
 .aboutMeTitle {
   font-weight: bold !important;
   margin-bottom: 20px;
-  color: #000 !important; /* Black color for title */
+  color: #000000 !important; /* Black color for title */
+  font-size: 2em !important;
 }
 
 .aboutMe {
   margin-top: 16px !important;
-  color: #000 !important; /* Black color for text */
+  color: #000000 !important; /* Black color for text */
+  font-size: 1.2em !important;
 }
 
 .hobbiesSection,
@@ -37,12 +50,17 @@
 .sectionTitle {
   font-weight: bold !important;
   margin-bottom: 20px;
-  color: #000 !important; /* Black color for title */
+  color: #000000 !important; /* Black color for title */
+  font-size: 2.5em !important;
 }
 
 .hobbyItem,
 .interestItem {
   text-align: center;
+}
+.interestText {
+  color: #000000 !important; /* Black color for text */
+  font-size: 1.2em !important;
 }
 
 .hobbyIcon,

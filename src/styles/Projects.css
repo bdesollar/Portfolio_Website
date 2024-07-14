@@ -1,17 +1,41 @@
-.section {
-  padding: 80px 0; /* Add spacing between sections */
+.projects-section {
   text-align: center;
-}
-
-.root {
-  margin: 40px !important;
-  padding: 16px !important;
-  text-align: center !important;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5) !important; /* Adjust shadow as desired */
+  background-image: url("../assets/img/projectsBackground1.jpg"); /* Add a background image */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  min-height: calc(
+    100vh - 64px - 80px
+  ); /* Ensure the section takes up the full viewport height minus the navbar and footer heights */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectTitle {
   text-align: center !important;
   justify-content: center !important;
   font-weight: bold !important;
+  font-style: italic !important;
+  font-size: 3em !important; /* Larger font size for the title */
+  color: rgb(0, 0, 0); /* White color for the title */
+  font-family: "Roboto", sans-serif; /* Stylish font */
+}
+
+.projectCard {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+  height: 75vh; /* Each project card takes up 75% of the viewport height */
+  width: 80%; /* Each project card takes up 80% of the viewport width */
+  margin-bottom: 40px; /* Add spacing between project cards */
+  text-align: left !important; /* Align text to the left */
+}
+
+.projectCard.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }

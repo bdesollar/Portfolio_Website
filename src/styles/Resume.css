@@ -1,6 +1,17 @@
-.section {
+.resume-section {
   padding: 80px 0; /* Add spacing between sections */
   text-align: center;
+  background-image: url("../assets/img/resumeBackground.jpg"); /* Add a background image */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  min-height: calc(
+    100vh - 64px - 80px
+  ); /* Ensure the section takes up the full viewport height minus the navbar and footer heights */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .paper {
@@ -23,7 +34,10 @@
   text-align: center !important;
   justify-content: center !important;
   font-weight: bold !important;
+  font-style: italic !important;
+  font-size: 3em !important; /* Larger font size for the title */
   margin-bottom: 40px;
+  color: #ffffff !important; /* Black color for better contrast */
 }
 
 .sectionTitle {
@@ -38,24 +52,25 @@
 .thankYouMessage {
   margin-top: 10px;
   font-style: italic;
-  color: #555;
+  color: #ffffff;
+  font-size: 2em;
 }
 
 .highlight {
-  background-color: #000000; /* Light grey background to highlight sections */
+  background-color: #000000 !important; /* Black background for highlights */
   padding: 5px;
   border-radius: 5px;
-  color: white;
+  color: white !important;
 }
 
 .technicalHighlight {
-  background-color: #d1e7dd; /* Light green background for technical highlights */
+  background-color: #d1e7dd !important; /* Light green background for technical highlights */
   padding: 2px 4px;
   border-radius: 3px;
 }
 
 .businessHighlight {
-  background-color: #ffeeba; /* Light yellow background for business highlights */
+  background-color: #ffeeba !important; /* Light yellow background for business highlights */
   padding: 2px 4px;
   border-radius: 3px;
 }

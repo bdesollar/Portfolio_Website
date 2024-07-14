@@ -1,5 +1,4 @@
 import React from "react";
-import { IconButton } from "@material-ui/core";
 import "../styles/TechStackIcons.css";
 
 // Define your default SVG icon here. You can replace this with any SVG or image you'd like.
@@ -24,11 +23,11 @@ function TechStackIcons({ techs }) {
   }
 
   return (
-    <div>
+    <div className="techStackIcons">
       {techs.map((tech) => (
-        <IconButton key={tech} className="iconButton">
+        <div key={tech} className="iconContainer">
           <TechStackIcon tech={tech} />
-        </IconButton>
+        </div>
       ))}
     </div>
   );

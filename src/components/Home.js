@@ -25,7 +25,7 @@ function Home() {
   };
 
   return (
-    <Element name="home" className="section">
+    <Element name="home" className="home-section">
       <Container maxWidth="xl">
         <Grid container spacing={6} alignItems="center">
           <Grid item xs={12} md={6}>

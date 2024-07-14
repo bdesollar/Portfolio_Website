@@ -12,7 +12,7 @@ function Resume() {
   };
 
   return (
-    <Element name="resume" className="section">
+    <Element name="resume" className="resume-section">
       <Container maxWidth="lg">
         <Typography className="resumeTitle" variant="h4" gutterBottom>
           My Resume
@@ -228,7 +228,7 @@ function Resume() {
               Download Resume
             </Button>
             {isDownloaded && (
-              <Typography variant="body2" className="thankYouMessage">
+              <Typography variant="body1" className="thankYouMessage">
                 Thank you for downloading my resume! 😊
               </Typography>
             )}

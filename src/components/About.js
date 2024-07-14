@@ -12,7 +12,7 @@ import "../styles/About.css";
 
 function About() {
   return (
-    <Element name="about" className="section">
+    <Element name="about" className="about-section">
       <Container maxWidth="lg">
         <Grid container spacing={6} alignItems="center">
           <Grid item xs={12} md={6}>
@@ -49,18 +49,20 @@ function About() {
               <Grid container spacing={3} justify="center">
                 <Grid item xs={12} sm={4} className="hobbyItem">
                   <FitnessCenterIcon className="hobbyIcon" />
-                  <Typography variant="body1">Working Out</Typography>
+                  <Typography variant="body1" className="interestText">
+                    Working Out
+                  </Typography>
                 </Grid>
                 <Grid item xs={12} sm={4} className="hobbyItem">
                   <BookIcon className="hobbyIcon" />
-                  <Typography variant="body1">
+                  <Typography variant="body1" className="interestText">
                     Reading (Currently on the Stormlight Archives by Brandon
                     Sanderson)
                   </Typography>
                 </Grid>
                 <Grid item xs={12} sm={4} className="hobbyItem">
                   <PeopleIcon className="hobbyIcon" />
-                  <Typography variant="body1">
+                  <Typography variant="body1" className="interestText">
                     Hanging Out with Friends
                   </Typography>
                 </Grid>
@@ -76,17 +78,19 @@ function About() {
               <Grid container spacing={3} justify="center">
                 <Grid item xs={12} sm={4} className="interestItem">
                   <CloudIcon className="interestIcon" />
-                  <Typography variant="body1">Cloud Computing</Typography>
+                  <Typography variant="body1" className="interestText">
+                    Cloud Computing
+                  </Typography>
                 </Grid>
                 <Grid item xs={12} sm={4} className="interestItem">
                   <SmartToyIcon className="interestIcon" />
-                  <Typography variant="body1">
+                  <Typography variant="body1" className="interestText">
                     Advancements in AI Technologies
                   </Typography>
                 </Grid>
                 <Grid item xs={12} sm={4} className="interestItem">
                   <ChipIcon className="interestIcon" />
-                  <Typography variant="body1">
+                  <Typography variant="body1" className="interestText">
                     Advancements in Processors (CPUs, GPUs)
                   </Typography>
                 </Grid>

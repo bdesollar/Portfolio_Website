@@ -1,50 +1,110 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Card,
-  CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
   Button,
   Typography,
-  Modal,
+  Grid,
 } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TechStackIcons from "./TechStackIcons"; // Import a component that renders the tech stack icons
 import "../styles/ProjectCard.css";
 
 function ProjectCard({ project }) {
-  const [open, setOpen] = useState(false);
+  const cardRef = useRef(null);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <Card className="root">
-      <CardActionArea onClick={handleOpen}>
-        <CardMedia
-          className="media"
-          image={project.logo}
-          title={project.name}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {project.name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {project.description}
-          </Typography>
-          <div className="techStack">
-            <TechStackIcons techs={project.techs} />{" "}
-            {/* Render the tech stack icons */}
-          </div>
-        </CardContent>
-      </CardActionArea>
+    <Card className="root" ref={cardRef}>
+      <Grid container spacing={2} alignItems="center" className="cardContent">
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            className="media"
+            image={project.logo}
+            title={project.name}
+          />
+        </Grid>
+        <Grid item xs={12} md={8}>
+          <CardContent>
+            <Typography
+              className="projectName"
+              gutterBottom
+              variant="h5"
+              component="h2"
+            >
+              {project.name}
+            </Typography>
+            <Typography
+              className="projectDescription"
+              variant="body2"
+              component="p"
+            >
+              <span className="descriptionTitle">Description:</span>{" "}
+              {project.description.overallDescription}
+            </Typography>
+            <Typography
+              className="projectAchievements"
+              variant="body2"
+              component="p"
+            >
+              <span className="descriptionTitle">Achievements:</span>
+              <ul>
+                {project.description.achievements.map((achievement, index) => (
+                  <li key={index}>{achievement}</li>
+                ))}
+              </ul>
+            </Typography>
+            <Typography
+              className="projectKeyFeatures"
+              variant="body2"
+              component="p"
+            >
+              <span className="descriptionTitle">Key Features:</span>
+              <ul>
+                {project.description.keyFeatures.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </Typography>
+            <Typography
+              className="projectUseCase"
+              variant="body2"
+              component="p"
+            >
+              <span className="descriptionTitle">Use Case:</span>{" "}
+              {project.description.useCase}
+            </Typography>
+            <div className="techStack">
+              <TechStackIcons techs={project.techs} />
+              {/* Render the tech stack icons */}
+            </div>
+          </CardContent>
+        </Grid>
+      </Grid>
       <CardActions className="cardActions">
         <Button
           size="small"
@@ -56,9 +116,6 @@ function ProjectCard({ project }) {
           View on Github
         </Button>
       </CardActions>
-      <Modal className="modal" open={open} onClose={handleClose}>
-        <img src={project.image} alt={project.name} className="modalImage" />
-      </Modal>
     </Card>
   );
 }
