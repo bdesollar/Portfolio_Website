@@ -108,7 +108,7 @@ function ProjectCard({ project }) {
       <CardActions className="cardActions">
         <Button
           size="small"
-          color="primary"
+          color="black"
           href={project.githubLink}
           target="_blank"
           startIcon={<GitHubIcon />}
