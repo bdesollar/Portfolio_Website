@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This is a personal portfolio website showcasing my projects, skills, and experiences. Built using React, Firebase, and CSS, it serves as a central hub for all my professional information and a way to connect with potential employers and collaborators.
+This is a personal portfolio website showcasing my projects, skills, and experiences. Built using React, and Firebase, it serves as a central hub for all my professional information and a way to connect with potential employers and collaborators.
 
 ## About
 
