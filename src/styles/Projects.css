@@ -39,3 +39,10 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.funnyMessage {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #555;
+  font-style: italic;
+}

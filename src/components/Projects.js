@@ -2,14 +2,11 @@ import React, { useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import { Grid, Typography } from "@material-ui/core";
 import { Element } from "react-scroll";
-import omnilensePic from "../assets/img/omnilensePic.png";
-import facialRecPic from "../assets/img/FacialRecPic.png";
-import desollarFitnessPic from "../assets/img/DeSollarFitnessPic.jpeg";
-import notablyPic from "../assets/img/notablyPic.png";
 import omnilenseLogoPic from "../assets/img/omniLenseBgRemoved.png";
 import facialRecLogoPic from "../assets/img/OmnilenseAPILogo.png";
 import desollarFitnessLogoPic from "../assets/img/DeSollarFitnessLogo.png";
 import notablyLogoPic from "../assets/img/notablyLogo.png";
+import portfolioLogoPic from "../assets/img/logo.jpg";
 import "../styles/Projects.css";
 
 function Projects() {
@@ -32,7 +29,6 @@ function Projects() {
           "Enhances the studying experience for students by addressing common challenges in organizing and presenting notes.",
       },
       githubLink: "https://github.com/JoslinSome/Notably",
-      image: notablyPic,
       logo: notablyLogoPic,
       techs: [
         "React",
@@ -61,7 +57,6 @@ function Projects() {
           "Motivates and guides users in their fitness journey by providing personalized workout plans and progress tracking.",
       },
       githubLink: "https://github.com/bdesollar/DeSollarFitness",
-      image: desollarFitnessPic,
       logo: desollarFitnessLogoPic,
       techs: ["React-Native", "Expo", "Firebase", "JavaScript"],
     },
@@ -82,7 +77,6 @@ function Projects() {
           "Enhances human connectivity by providing a unique and immediate way to connect with people.",
       },
       githubLink: "https://github.com/Iron-Men-2023/OmniLens/tree/main",
-      image: omnilensePic,
       logo: omnilenseLogoPic,
       techs: ["React-Native", "Expo", "Firebase", "JavaScript"],
     },
@@ -102,9 +96,29 @@ function Projects() {
           "Accurately identifies individuals from a given database for authentication purposes.",
       },
       githubLink: "https://github.com/Iron-Men-2023/Flask-API/tree/main",
-      image: facialRecPic,
       logo: facialRecLogoPic,
       techs: ["Python", "Flask", "Heroku", "JavaScript"],
+    },
+    {
+      name: "Personal Portfolio Website (This Website 🤓)",
+      description: {
+        overallDescription:
+          "This personal portfolio website showcases my projects, skills, and experiences. Built using React, and Firebase, it serves as a central hub for all my professional information and a way to connect with potential employers and collaborators.",
+        achievements: [
+          "Designed and developed a responsive and visually appealing portfolio website.",
+          "Integrated Firebase for backend services and hosting.",
+        ],
+        keyFeatures: [
+          "Project Showcase: Displays detailed information about my projects.",
+          "Responsive Design: Ensures the website looks great on all devices.",
+          "Contact Form: Allows visitors to get in touch with me easily.",
+        ],
+        useCase:
+          "Serves as a central hub for showcasing my work and connecting with potential employers and collaborators.",
+      },
+      githubLink: "https://github.com/bdesollar/Portfolio_Website",
+      logo: portfolioLogoPic,
+      techs: ["React", "Firebase", "JavaScript"],
     },
   ];
 
