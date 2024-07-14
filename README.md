@@ -35,7 +35,7 @@ Make sure you have the following installed:
 
 1. Clone the repository:
 
-    > git clone https://github.com/YourUsername/PortfolioWebsite.git
+    > git clone [https://github.com/YourUsername/PortfolioWebsite.git](https://github.com/bdesollar/Portfolio_Website)
 
 2. Navigate to the project directory:
 
