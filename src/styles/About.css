@@ -1,7 +1,7 @@
 .about-section {
   padding: 100px 0; /* Add more spacing between sections */
   text-align: center;
-  background-image: url("../assets/img/aboutBackground.jpg"); /* Add a background image */
+  background-image: url("../assets/img/projectsBackground1.jpg"); /* Add a background image */
   background-size: cover; /* Ensure the background image covers the entire section */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
