@@ -58,6 +58,7 @@
 .interestItem {
   text-align: center;
 }
+
 .interestText {
   color: #000000 !important; /* Black color for text */
   font-size: 1.2em !important;
@@ -68,4 +69,32 @@
   font-size: 48px !important;
   color: #000 !important; /* Black color for icons */
   margin-bottom: 10px;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 0;
+  }
+
+  .aboutMeTitle {
+    font-size: 1.5em !important;
+  }
+
+  .aboutMe {
+    font-size: 1em !important;
+  }
+
+  .sectionTitle {
+    font-size: 2em !important;
+  }
+
+  .interestText {
+    font-size: 1em !important;
+  }
+
+  .hobbyIcon,
+  .interestIcon {
+    font-size: 36px !important;
+  }
 }

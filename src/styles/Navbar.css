@@ -18,3 +18,18 @@
 .navButton {
   color: #fff !important; /* White text color */
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .menuButton {
+    margin-right: 10px !important;
+  }
+
+  .title {
+    font-size: 1.2em !important;
+  }
+
+  .navButton {
+    font-size: 0.8em !important;
+  }
+}

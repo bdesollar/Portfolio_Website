@@ -46,3 +46,15 @@
   color: #555;
   font-style: italic;
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .projectTitle {
+    font-size: 2em !important;
+  }
+
+  .projectCard {
+    height: auto !important;
+    width: 100% !important;
+  }
+}

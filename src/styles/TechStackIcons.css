@@ -8,3 +8,12 @@
   height: 30px !important;
   width: 30px !important;
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .icon {
+    font-size: 3px !important;
+    height: 20px !important;
+    width: 20px !important;
+  }
+}

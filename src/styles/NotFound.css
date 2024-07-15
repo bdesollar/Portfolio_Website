@@ -26,3 +26,18 @@
   background-color: #000 !important;
   color: #fff !important;
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .notFoundTitle {
+    font-size: 3em !important;
+  }
+
+  .notFoundSubtitle {
+    font-size: 1.5em !important;
+  }
+
+  .notFoundDescription {
+    font-size: 1em !important;
+  }
+}

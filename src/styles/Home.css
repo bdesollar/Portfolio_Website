@@ -62,3 +62,34 @@
 .socialIcons .MuiIconButton-root {
   color: #fff;
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .homeSubtitle {
+    font-size: 2em !important;
+  }
+
+  .description {
+    font-size: 1.2em !important;
+  }
+
+  .funnyQuote {
+    font-size: 1em !important;
+  }
+
+  .profileImageLarge {
+    width: 300px !important;
+    height: 300px !important;
+    margin-top: 10px !important;
+  }
+
+  .socialIcons {
+    top: 10% !important;
+    bottom: auto !important;
+    left: 10% !important;
+    transform: translateX(-50%);
+    flex-direction: column !important;
+    border-radius: 5px 5px 0 0 !important;
+    margin-right: 10px !important;
+  }
+}

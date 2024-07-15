@@ -49,8 +49,34 @@
 }
 
 .submitButton {
-  background-color: #000;
-  color: #fff;
+  background-color: #000 !important;
+  color: #fff !important;
   margin-top: 20px;
   width: 100%;
+}
+
+.submitButton:hover {
+  background-color: #ffffff !important; /* Darken the background color on hover */
+  color: #000 !important; /* Change the text color on hover */
+  border: 1.5px solid #000 !important; /* Add a border on hover */
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .contactContainer {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contactPaper {
+    padding: 10px;
+  }
+
+  .contactHeader {
+    margin-bottom: 10px;
+  }
+
+  .submitButton {
+    margin-top: 10px;
+  }
 }

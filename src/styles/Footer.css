@@ -6,3 +6,10 @@
   padding: 20px 0;
   z-index: 1000; /* Ensure this is lower than the chat bubble */
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 0;
+  }
+}

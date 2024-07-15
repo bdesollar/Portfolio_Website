@@ -71,3 +71,30 @@
   font-size: 1.3em !important; /* Make description titles distinct */
   margin-top: 10px;
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .media {
+    height: 200px !important;
+    width: 250px !important;
+  }
+
+  .cardContent {
+    height: auto;
+  }
+
+  .projectName {
+    font-size: 2em !important;
+  }
+
+  .projectDescription,
+  .projectAchievements,
+  .projectKeyFeatures,
+  .projectUseCase {
+    font-size: 1em !important;
+  }
+
+  .descriptionTitle {
+    font-size: 1.1em !important;
+  }
+}

@@ -74,3 +74,22 @@
   padding: 2px 4px;
   border-radius: 3px;
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .resumeTitle {
+    font-size: 2em !important;
+  }
+
+  .sectionTitle {
+    font-size: 1.5em !important;
+  }
+
+  .sectionContent {
+    font-size: 1em !important;
+  }
+
+  .thankYouMessage {
+    font-size: 1.5em !important;
+  }
+}

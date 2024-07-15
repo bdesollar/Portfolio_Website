@@ -157,3 +157,46 @@ img {
   margin-top: 20px;
   width: 100%;
 }
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+
+  .socialIcons {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    border-radius: 5px;
+  }
+
+  .chatBubble {
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+  }
+
+  .contactContainer {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contactPaper {
+    padding: 10px;
+  }
+
+  .contactHeader {
+    margin-bottom: 10px;
+  }
+
+  .submitButton {
+    margin-top: 10px;
+  }
+}
