@@ -7,10 +7,44 @@ import facialRecLogoPic from "../assets/img/OmnilenseAPILogo.png";
 import desollarFitnessLogoPic from "../assets/img/DeSollarFitnessLogo.png";
 import notablyLogoPic from "../assets/img/notablyLogo.png";
 import portfolioLogoPic from "../assets/img/logo.jpg";
+import audioGeneLogoPic from "../assets/img/AudioGene_logo.png";
+import thesisPaper from "../assets/pdf/Masters_Thesis_Ben_DeSollar_Official.pdf";
 import "../styles/Projects.css";
 
 function Projects() {
   const projects = [
+    {
+      name: "AGTD - The AudioGene Translational Dashboard",
+      description: {
+        overallDescription:
+          "AGTD: AudioGene Translational Dashboard is a hybrid machine learning and visualization interface I designed for my masters thesis to enhance the genetic diagnosis of Autosomal Dominant Non-Syndromic Hearing Loss (ADNSHL). It integrates advanced visualization tools with ensemble and semi-supervised SVM models. Additionally, I completely redesigned and implemented the entire AudioGene website where the tool is deployed, ensuring a seamless user experience and robust functionality.",
+        achievements: [
+          "Developed AGTD: AudioGene Translational Dashboard.",
+          "Innovated a hybrid machine learning and visualization interface to enhance the genetic diagnosis of ADNSHL.",
+          "Redesigned and implemented the entire AudioGene website for improved user experience and functionality.",
+        ],
+        keyFeatures: [
+          "Hybrid Machine Learning: Combines ensemble and semi-supervised SVM models.",
+          "Advanced Visualization: Features an interactive three-dimensional audiogram plot, a 2D audio profile plot, a surface profile viewer, and an ethnicity distribution visualization.",
+          "Website Redesign: Complete redesign and implementation of the AudioGene website.",
+        ],
+        useCase:
+          "Enhances diagnosis confidence and improves interpretation of AudioGene predictions while providing a user-friendly and functional website for deployment.",
+      },
+      githubLink:
+        "https://research-git.uiowa.edu/morl/audiogene/website/AudioGene.git",
+      websiteLink: "https://audiogene.eng.uiowa.edu/",
+      thesisLink: thesisPaper,
+      logo: audioGeneLogoPic,
+      techs: [
+        "Docker",
+        "MYSQL",
+        "Express-js",
+        "React",
+        "Node-js",
+        "JavaScript",
+      ],
+    },
     {
       name: "Notably",
       description: {

@@ -94,24 +94,66 @@ img {
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
+  z-index: 2000; /* Ensure this is higher than the footer */
 }
 
 .chatBubble .MuiSvgIcon-root {
   color: #fff;
 }
 
-.chatBox {
+.contactContainer {
   position: fixed;
-  bottom: 80px;
-  right: 20px;
-  width: 300px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 500px; /* Make the form wider */
   padding: 20px;
-  display: none;
+  background: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for distinction */
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 3000;
 }
 
-.chatBox.open {
-  display: block;
+.contactContainer.open {
+  transform: translateY(0);
+}
+
+.contactPaper {
+  padding: 20px;
+  text-align: center;
+}
+
+.contactHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contactTitle {
+  font-weight: bold;
+  color: #000 !important; /* Black color for title */
+}
+
+.successMessage {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.infoMessage {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  margin-top: 20px;
+}
+
+.submitButton {
+  background-color: #000;
+  color: #fff;
+  margin-top: 20px;
+  width: 100%;
 }

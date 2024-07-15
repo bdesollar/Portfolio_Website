@@ -35,15 +35,15 @@ Make sure you have the following installed:
 
 1. Clone the repository:
 
-    > git clone [https://github.com/YourUsername/PortfolioWebsite.git](https://github.com/bdesollar/Portfolio_Website)
+   > git clone [https://github.com/YourUsername/PortfolioWebsite.git](https://github.com/bdesollar/Portfolio_Website)
 
 2. Navigate to the project directory:
 
-    > cd PortfolioWebsite
+   > cd PortfolioWebsite
 
 3. Install the dependencies:
 
-    > yarn install
+   > yarn install
 
 ## Running the Project
 
@@ -64,6 +64,7 @@ This will create an optimized production build of the website in the `build` dir
 ## Project Structure
 
 The project structure is as follows:
+
 ```
 PortfolioWebsite/
 ├── public/
@@ -98,7 +99,6 @@ PortfolioWebsite/
 ├── yarn.lock
 └── README.md
 ```
-
 
 ## Contributing
 

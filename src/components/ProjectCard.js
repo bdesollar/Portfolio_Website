@@ -41,14 +41,10 @@ function ProjectCard({ project }) {
   return (
     <Card className="root" ref={cardRef}>
       <Grid container spacing={2} alignItems="center" className="cardContent">
-        <Grid item xs={12} md={4}>
-          <CardMedia
-            className="media"
-            image={project.logo}
-            title={project.name}
-          />
+        <Grid item xs={12} md={4} container justify="center">
+          <img className="media" src={project.logo} alt={project.name} />
         </Grid>
-        <Grid item xs={12} md={8}>
+        <Grid item xs={12} md={8} className="cardTextContent">
           <CardContent>
             <Typography
               className="projectName"
@@ -115,6 +111,26 @@ function ProjectCard({ project }) {
         >
           View on Github
         </Button>
+        {project.thesisLink && (
+          <Button
+            size="small"
+            color="black"
+            href={project.thesisLink}
+            target="_blank"
+          >
+            Download Thesis
+          </Button>
+        )}
+        {project.websiteLink && (
+          <Button
+            size="small"
+            color="black"
+            href={project.websiteLink}
+            target="_blank"
+          >
+            Visit Website
+          </Button>
+        )}
       </CardActions>
     </Card>
   );

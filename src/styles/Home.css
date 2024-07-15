@@ -62,18 +62,3 @@
 .socialIcons .MuiIconButton-root {
   color: #fff;
 }
-
-.chatBubble {
-  position: fixed;
-  bottom: 10px !important;
-  right: 20px;
-  background-color: #ffffff !important;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 2000; /* Ensure this is higher than the footer */
-}
-
-.chatBubble .MuiSvgIcon-root {
-  color: #000000 !important;
-}

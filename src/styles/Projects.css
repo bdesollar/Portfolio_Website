@@ -25,13 +25,13 @@
 
 .projectCard {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(20px) scale(0.98) !important;
   transition:
     opacity 0.6s ease-out,
     transform 0.6s ease-out;
-  height: 75vh; /* Each project card takes up 75% of the viewport height */
-  width: 80%; /* Each project card takes up 80% of the viewport width */
-  margin-bottom: 40px; /* Add spacing between project cards */
+  height: 80vh !important; /* Set a fixed height for project cards */
+  width: 80% !important; /* Set a fixed width for project cards */
+  margin-bottom: 20px !important; /* Add margin between project cards */
   text-align: left !important; /* Align text to the left */
 }
 

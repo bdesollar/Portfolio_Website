@@ -12,8 +12,9 @@
 }
 
 .media {
-  height: 300px !important; /* Bigger logo */
-  width: 350px !important; /* Bigger logo */
+  height: 300px !important; /* Set a fixed height for the media */
+  width: 350px !important; /* Set a fixed width for the media */
+  object-fit: contain !important; /* Ensure the logo scales correctly within its container */
   border-radius: 10% !important;
   margin: 0 auto;
 }
@@ -21,6 +22,14 @@
 .cardContent {
   height: 65vh; /* Ensure the card content takes up 75% of the viewport height */
   text-align: left !important; /* Align text to the left */
+}
+
+.cardTextContent {
+  height: 100% !important; /* Ensure the text content takes up the full height of its container */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  overflow-y: auto !important; /* Make the content scrollable if needed */
 }
 
 .cardActions {

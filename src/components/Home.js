@@ -90,10 +90,6 @@ function Home() {
           <EmailIcon />
         </IconButton>
       </div>
-      <div className="chatBubble" onClick={toggleChat}>
-        <ChatIcon />
-      </div>
-      <Contact isOpen={isChatOpen} onClose={toggleChat} />
     </Element>
   );
 }
