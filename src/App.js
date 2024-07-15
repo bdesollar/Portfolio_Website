@@ -7,6 +7,7 @@ import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import NotFound from "./components/NotFound"; // Import the NotFound component
 import ChatIcon from "@material-ui/icons/Chat";
 import "./App.css"; // Import global styles
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<NotFound />} /> {/* Add this line */}
         </Routes>
       </div>
       <Footer />
