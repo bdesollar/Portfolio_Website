@@ -28,15 +28,17 @@ function About() {
                 About Me
               </Typography>
               <Typography className="aboutMe" variant="body1" gutterBottom>
-                I’m Benjamin DeSollar, a proud graduate of the University of
-                Iowa with a Master's in Electrical and Computer Engineering,
-                focusing on Software Engineering. My mission? To share my
-                passion and love for technology with others, leveraging my
-                background to help make people's goals come true and produce
-                actionable insights. Starting August 2024, I'll be joining Intel
-                as part of the Sales and Marketing Rotational Program (SMRP) on
-                the technical side of things. Let's just say, I'm here to turn
-                tech dreams into reality, one byte at a time!
+                My name is Benjamin DeSollar, and I hold a Master's degree in
+                Electrical and Computer Engineering from the University of Iowa,
+                with a focus in Software Engineering. I am dedicated to
+                utilizing my expertise to assist others in achieving their goals
+                and generating actionable insights. Beginning in August 2024, I
+                will be joining Intel as part of the Sales and Marketing
+                Rotational Program (SMRP) in a technical capacity. I am
+                committed to continuous learning and growth, and I am excited to
+                see where my career takes me! Do not hesitate to reach out to me
+                and connect to discuss opportunities or to chat about
+                technology, fitness, or anything else!
               </Typography>
             </div>
           </Grid>
