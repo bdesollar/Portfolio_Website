@@ -51,7 +51,7 @@ function Home() {
                 Benjamin DeSollar
               </Typography>
               <Typography variant="body1" className="description">
-                Technical Sales Specialist | Innovator | Engineer
+                AI Product Manager | Innovator | Engineer
               </Typography>
               <Typography variant="body1" className="funnyQuote">
                 "Innovation distinguishes between a leader and a follower." -

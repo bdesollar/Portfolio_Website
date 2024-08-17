@@ -49,49 +49,100 @@ function Resume() {
               <Typography variant="h5" className="sectionTitle highlight">
                 Technical Experience
               </Typography>
+              <br />
+              <Typography variant="body1" className="sectionContent">
+                <strong>Intel Corporation, Chandler, AZ</strong> <br />
+                AI Product Manager, Sales and Marketing Rotational Program{" "}
+                <br />
+                <em>Aug 2024 - Present</em> <br />• Contributing to high-impact
+                projects within Intel's MAAD team (Machine Learning, Artificial
+                Intelligence, Advanced Analytics, and Data Science) to enhance
+                business outcomes. <br />• Translating complex data insights
+                into actionable business strategies that align with Intel's
+                financial and technological objectives. <br />• Collaborating
+                with senior management and key stakeholders to emphasize the
+                strategic importance of AI, fostering partnerships that support
+                long-term success.
+              </Typography>
+              <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>University of Iowa, Iowa City, IA</strong> <br />
-                Graduate Research Assistant <br />
-                <em>Aug 2023 - July 2024</em> <br />• Led the development of the{" "}
+                Graduate Research Assistant |{" "}
+                <a
+                  href="https://audiogene.eng.uiowa.edu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    textDecoration: "underline",
+                    transition: "color 0.3s",
+                  }}
+                  onMouseEnter={(e) => (e.target.style.color = "#007bff")}
+                  onMouseLeave={(e) => (e.target.style.color = "inherit")}
+                >
+                  audiogene.eng.uiowa.edu
+                </a>{" "}
+                <br />
+                <em>Aug 2022 - May 2024</em> <br />• Developed the{" "}
                 <span className="technicalHighlight">
                   AudioGene Translational Dashboard (AGTD)
                 </span>
                 , integrating{" "}
                 <span className="technicalHighlight">machine learning</span> and
-                visualization to enhance the prediction of hearing loss genes.{" "}
-                <br />• Improved diagnostic accuracy through innovative data
-                analysis and visualization techniques, addressing data sparsity.
+                visualization tools to enhance the genetic diagnosis of
+                Autosomal Dominant Non-Syndromic Hearing Loss (ADNSHL). <br />•
+                Enhanced diagnostic accuracy by addressing class imbalance and
+                data sparsity in audiometric datasets, resulting in improved
+                diagnosis confidence.
               </Typography>
+              <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>AMD, Fort Collins, CO</strong> <br />
                 Software Engineer Intern <br />
-                <em>May 2023 - Aug 2023</em> <br />• Unified three apps into one
-                interface, boosting efficiency by 60% and effectively
-                communicating benefits to stakeholders. <br />• Collaborated
-                cross-functionally to develop debugging tools that streamlined
-                debugging processes across all business units.
+                <em>May 2023 - Aug 2023</em> <br />• Led the unification of
+                three distinct applications into a comprehensive user interface,
+                boosting efficiency by 60% and effectively communicating
+                benefits to stakeholders. <br />• Developed and deployed
+                debugging tools across all business units, enhancing chip
+                debugging processes and productivity.
               </Typography>
+              <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>John Deere, Moline, IL</strong> <br />
                 Software Engineer Intern <br />
                 <em>May 2022 - Aug 2022</em> <br />• Implemented robust security
-                measures in{" "}
-                <span className="technicalHighlight">Kubernetes</span>,
-                enhancing cluster security and reducing potential
-                vulnerabilities. <br />• Increased security operations
-                efficiency by 50% through the strategic development and
-                integration of{" "}
-                <span className="technicalHighlight">Rego code</span>.
+                policies to fortify{" "}
+                <span className="technicalHighlight">Kubernetes</span> cluster
+                security, reducing vulnerabilities. <br />• Developed and
+                integrated <span className="technicalHighlight">Rego code</span>
+                , improving security operations efficiency by 50%.
               </Typography>
+              <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>Collins Aerospace, Cedar Rapids, IA</strong> <br />
-                Software Engineer Co-op/Intern <br />
-                <em>May 2020 - Dec 2021</em> <br />
-                • Developed analytical tools that enhanced avionic program
-                accuracy and increased error scanning efficiency by 98%. <br />•
-                Led a strategic initiative to consolidate five disparate tools
-                into a single platform, reducing work time by 92%.
+                Software Engineer Intern <br />
+                <em>May 2021 - Aug 2021</em> <br />• Developed{" "}
+                <span className="technicalHighlight">Python</span>-based
+                analytical tools to enhance avionic program requirement accuracy
+                and increased error scanning efficiency by 98%. <br />• Led a
+                project to consolidate five development tools into one, reducing
+                work time by 92% and boosting team productivity. <br />•
+                Optimized data collection from multiple Restful APIs, improving
+                algorithm time complexity and data processing efficiency.
               </Typography>
+              <br />
+              <Typography variant="body1" className="sectionContent">
+                <strong>Collins Aerospace, Cedar Rapids, IA</strong> <br />
+                Software Engineer Co-op <br />
+                <em>Aug 2020 - Dec 2020</em> <br />• Engineered a
+                high-performance application for military avionic documentation
+                verification, reducing verification time by 98% and accelerating
+                data migration into a large data center. <br />• Collaborated
+                with a cross-functional team on data migration, demonstrating
+                strong teamwork and communication skills. <br />• Conducted
+                rigorous testing and debugging of the application, ensuring its
+                reliability and effectiveness in the data verification process.
+              </Typography>
+              <br />
             </Paper>
           </Grid>
 
@@ -103,28 +154,19 @@ function Resume() {
               <Typography variant="body1" className="sectionContent">
                 <strong>University of Iowa, Iowa City, IA</strong> <br />
                 Teaching Assistant <br />
-                <em>Aug 2021 - May 2023</em> <br />• Educated 600+ students in{" "}
-                <span className="technicalHighlight">C++</span> and{" "}
-                <span className="technicalHighlight">Java</span>, significantly
-                elevating their grasp of software design. <br />• Achieved a
-                90%+ positive feedback rate, showcasing communication skills
-                vital for client-facing roles.
+                <em>Aug 2021 - May 2023</em> <br />• Translated complex
+                programming concepts in{" "}
+                <span className="technicalHighlight">Java</span> and{" "}
+                <span className="technicalHighlight">C++</span> into digestible
+                lessons for over 600 students, demonstrating strong
+                communication and technical teaching abilities. <br />• Graded
+                assignments and provided detailed feedback, fostering students'
+                academic growth in object-oriented and systems programming.{" "}
+                <br />• Managed code repositories and projects, enhancing
+                students' practical skills and exposure to software development
+                practices used in industry.
               </Typography>
-              <Typography variant="body1" className="sectionContent">
-                <strong>UIowa Hyperloop Club, Iowa City, IA</strong> <br />
-                Executive Board/Systems Lead <br />
-                <em>Aug 2020 - Dec 2022</em> <br />
-                • Managed a 15-member team in the SpaceX Hyperloop challenge,
-                showcasing technical and strategic leadership. <br />• Garnered{" "}
-                <span className="businessHighlight">$5,000</span> in project
-                funding, emphasizing skills in{" "}
-                <span className="businessHighlight">resource mobilization</span>{" "}
-                and{" "}
-                <span className="businessHighlight">
-                  stakeholder collaboration
-                </span>
-                .
-              </Typography>
+              <br />
             </Paper>
           </Grid>
 
@@ -136,28 +178,28 @@ function Resume() {
               <Typography variant="body1" className="sectionContent">
                 <strong>Omnilense, Iowa City, IA</strong> <br />
                 Co-Founder & CTO <br />
-                <em>Jul 2022 - Jun 2023</em> <br />
-                • Directed a team of four, engineering glasses with facial
-                recognition paired with a social media app, enhancing
-                connections. <br />• Secured{" "}
-                <span className="businessHighlight">$300</span> in a pitch
-                contest and was granted an additional{" "}
-                <span className="businessHighlight">$15,000</span> for the
-                business venture.
+                <em>Jul 2022 - Jun 2023</em> <br />• Directed a team of four,
+                engineering glasses with facial recognition technology paired
+                with a social media app, enhancing personal connections. <br />•
+                Secured <span className="businessHighlight">$300</span> in a
+                pitch contest and an additional{" "}
+                <span className="businessHighlight">$15,000</span> in funding
+                for the business venture.
               </Typography>
+              <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>BRDBOX, Iowa City, IA</strong> <br />
                 Founder and CEO <br />
-                <em>Jul 2022 - May 2023</em> <br />
-                • Successfully initiated a startup, acquiring a comprehensive
-                grasp of end-to-end business operations. <br />• Excelled in{" "}
-                <span className="businessHighlight">
-                  supplier negotiations
-                </span>{" "}
-                and{" "}
-                <span className="businessHighlight">customer relations</span>,
-                boosting supply chain efficiency and client satisfaction.
+                <em>Jul 2022 - May 2023</em> <br />• Launched and led a startup
+                to gain firsthand experience with business operations,
+                demonstrating initiative, leadership, and strategic planning
+                skills. <br />• Engaged in supplier negotiations and customer
+                communications, acquiring key insights into sales processes and
+                stakeholder management. <br />• Leveraged this experience to
+                deepen understanding of entrepreneurship, product development,
+                and project management.
               </Typography>
+              <br />
             </Paper>
           </Grid>
 
@@ -181,6 +223,7 @@ function Resume() {
                 </span>
                 .
               </Typography>
+              <br />
             </Paper>
           </Grid>
 
