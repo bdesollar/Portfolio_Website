@@ -25,3 +25,5 @@ yarn-error.log*
 firebase.json
 .firebase/hosting.cHVibGlj.cache
 .gitignore
+.idea
+yarn.lock

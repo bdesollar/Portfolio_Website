@@ -51,96 +51,81 @@ function Resume() {
               </Typography>
               <br />
               <Typography variant="body1" className="sectionContent">
-                <strong>Intel Corporation, Chandler, AZ</strong> <br />
-                AI Product Manager, Sales and Marketing Rotational Program{" "}
+                <strong>Intel Corporation, Durham, NC</strong> <br />
+                Global Alliances / Inside Sales Program Manager (Sales and Marketing Rotational Program){" "}
                 <br />
-                <em>Aug 2024 - Present</em> <br />• Contributing to high-impact
-                projects within Intel's MAAD team (Machine Learning, Artificial
-                Intelligence, Advanced Analytics, and Data Science) to enhance
-                business outcomes. <br />• Translating complex data insights
-                into actionable business strategies that align with Intel's
-                financial and technological objectives. <br />• Collaborating
-                with senior management and key stakeholders to emphasize the
-                strategic importance of AI, fostering partnerships that support
-                long-term success.
+                <em>Apr 2024 - Present</em> <br />• Drive technical enablement
+                for Lenovo's Inside Sales organization, leading platform trainings,
+                competitive analysis, and AI capability positioning to accelerate
+                adoption of Intel's Commercial Client solutions. <br />• Manage
+                execution of a multi-billion dollar MOU between Intel and Lenovo,
+                aligning stakeholders across business, technical, and marketing
+                teams on AI roadmap milestones, product commitments, and sales targets.
+              </Typography>
+              <br />
+              <Typography variant="body1" className="sectionContent">
+                <strong>Intel Corporation, Chandler, AZ</strong> <br />
+                AI Product Manager (Sales and Marketing Rotational Program){" "}
+                <br />
+                <em>Aug 2024 - Apr 2024</em> <br />• Developed and deployed
+                AI-driven analytics tools across sales and marketing functions,
+                reducing manual workflows by over 70% and accelerating data-driven
+                decision making. <br />• Collaborated with GTM and engineering
+                teams to operationalize LLMs for document retrieval and partner
+                intelligence, building scalable internal tools with real user impact.
               </Typography>
               <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>University of Iowa, Iowa City, IA</strong> <br />
-                Graduate Research Assistant |{" "}
-                <a
-                  href="https://audiogene.eng.uiowa.edu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    textDecoration: "underline",
-                    transition: "color 0.3s",
-                  }}
-                  onMouseEnter={(e) => (e.target.style.color = "#007bff")}
-                  onMouseLeave={(e) => (e.target.style.color = "inherit")}
-                >
-                  audiogene.eng.uiowa.edu
-                </a>{" "}
-                <br />
-                <em>Aug 2022 - May 2024</em> <br />• Developed the{" "}
+                Graduate Research Assistant <br />
+                <em>Aug 2023 - Jul 2024</em> <br />• Designed and deployed the{" "}
                 <span className="technicalHighlight">
                   AudioGene Translational Dashboard (AGTD)
                 </span>
                 , integrating{" "}
                 <span className="technicalHighlight">machine learning</span> and
-                visualization tools to enhance the genetic diagnosis of
-                Autosomal Dominant Non-Syndromic Hearing Loss (ADNSHL). <br />•
-                Enhanced diagnostic accuracy by addressing class imbalance and
-                data sparsity in audiometric datasets, resulting in improved
-                diagnosis confidence.
+                data visualization to improve genetic diagnostics for hearing loss patients. <br />•
+                Addressed real-world challenges of class imbalance, data sparsity, and
+                clinician usability—laying groundwork for production-grade AI deployment
+                in healthcare.
               </Typography>
               <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>AMD, Fort Collins, CO</strong> <br />
                 Software Engineer Intern <br />
-                <em>May 2023 - Aug 2023</em> <br />• Led the unification of
-                three distinct applications into a comprehensive user interface,
-                boosting efficiency by 60% and effectively communicating
-                benefits to stakeholders. <br />• Developed and deployed
-                debugging tools across all business units, enhancing chip
-                debugging processes and productivity.
+                <em>May 2023 - Aug 2023</em> <br />• Led the consolidation of
+                three distinct applications into a unified, intuitive platform,
+                increasing team efficiency by 60%. <br />• Created robust
+                debugging tools and collaborated cross-functionally to streamline
+                chip development processes across multiple business units.
               </Typography>
               <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>John Deere, Moline, IL</strong> <br />
                 Software Engineer Intern <br />
-                <em>May 2022 - Aug 2022</em> <br />• Implemented robust security
-                policies to fortify{" "}
-                <span className="technicalHighlight">Kubernetes</span> cluster
-                security, reducing vulnerabilities. <br />• Developed and
-                integrated <span className="technicalHighlight">Rego code</span>
-                , improving security operations efficiency by 50%.
+                <em>May 2022 - Aug 2022</em> <br />• Enhanced{" "}
+                <span className="technicalHighlight">Kubernetes</span> security
+                infrastructure by implementing advanced policies, significantly
+                reducing vulnerabilities and improving operational efficiency by
+                50% through optimized Rego integrations.
               </Typography>
               <br />
-              <Typography variant="body1" className="sectionContent">
-                <strong>Collins Aerospace, Cedar Rapids, IA</strong> <br />
-                Software Engineer Intern <br />
-                <em>May 2021 - Aug 2021</em> <br />• Developed{" "}
-                <span className="technicalHighlight">Python</span>-based
-                analytical tools to enhance avionic program requirement accuracy
-                and increased error scanning efficiency by 98%. <br />• Led a
-                project to consolidate five development tools into one, reducing
-                work time by 92% and boosting team productivity. <br />•
-                Optimized data collection from multiple Restful APIs, improving
-                algorithm time complexity and data processing efficiency.
+
+            </Paper>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Paper elevation={3} className="paper">
+              <Typography variant="h5" className="sectionTitle highlight">
+                Leadership Experience
               </Typography>
-              <br />
               <Typography variant="body1" className="sectionContent">
-                <strong>Collins Aerospace, Cedar Rapids, IA</strong> <br />
-                Software Engineer Co-op <br />
-                <em>Aug 2020 - Dec 2020</em> <br />• Engineered a
-                high-performance application for military avionic documentation
-                verification, reducing verification time by 98% and accelerating
-                data migration into a large data center. <br />• Collaborated
-                with a cross-functional team on data migration, demonstrating
-                strong teamwork and communication skills. <br />• Conducted
-                rigorous testing and debugging of the application, ensuring its
-                reliability and effectiveness in the data verification process.
+                <strong>UIowa Hyperloop Club, Iowa City, IA</strong> <br />
+                Executive Board/Systems Lead <br />
+                <em>Aug 2020 - Dec 2022</em> <br />• Directed a 15-member team
+                in the SpaceX Hyperloop challenge, securing{" "}
+                <span className="businessHighlight">$5,000</span> funding and
+                demonstrating strong leadership and project management.
               </Typography>
               <br />
             </Paper>
@@ -149,7 +134,7 @@ function Resume() {
           <Grid item xs={12}>
             <Paper elevation={3} className="paper">
               <Typography variant="h5" className="sectionTitle">
-                Leadership & Teaching Experience
+                Teaching Experience
               </Typography>
               <Typography variant="body1" className="sectionContent">
                 <strong>University of Iowa, Iowa City, IA</strong> <br />
@@ -173,59 +158,22 @@ function Resume() {
           <Grid item xs={12}>
             <Paper elevation={3} className="paper">
               <Typography variant="h5" className="sectionTitle highlight">
-                Business Experience
+                Entrepreneurial Experience
               </Typography>
               <Typography variant="body1" className="sectionContent">
                 <strong>Omnilense, Iowa City, IA</strong> <br />
                 Co-Founder & CTO <br />
-                <em>Jul 2022 - Jun 2023</em> <br />• Directed a team of four,
-                engineering glasses with facial recognition technology paired
-                with a social media app, enhancing personal connections. <br />•
-                Secured <span className="businessHighlight">$300</span> in a
-                pitch contest and an additional{" "}
-                <span className="businessHighlight">$15,000</span> in funding
-                for the business venture.
-              </Typography>
-              <br />
-              <Typography variant="body1" className="sectionContent">
-                <strong>BRDBOX, Iowa City, IA</strong> <br />
-                Founder and CEO <br />
-                <em>Jul 2022 - May 2023</em> <br />• Launched and led a startup
-                to gain firsthand experience with business operations,
-                demonstrating initiative, leadership, and strategic planning
-                skills. <br />• Engaged in supplier negotiations and customer
-                communications, acquiring key insights into sales processes and
-                stakeholder management. <br />• Leveraged this experience to
-                deepen understanding of entrepreneurship, product development,
-                and project management.
+                <em>Jul 2022 - Jun 2023</em> <br />• Led engineering for innovative
+                facial-recognition glasses linked to a social media platform. <br />•
+                Secured <span className="businessHighlight">$15,300</span> in funding
+                through pitches and grants, effectively demonstrating entrepreneurial
+                leadership.
               </Typography>
               <br />
             </Paper>
           </Grid>
 
-          <Grid item xs={12}>
-            <Paper elevation={3} className="paper">
-              <Typography variant="h5" className="sectionTitle">
-                Projects
-              </Typography>
-              <Typography variant="body1" className="sectionContent">
-                <strong>
-                  Notably (React Native, MongoDB, Express.js, Node.js, OpenAI
-                  GPT, Google Cloud Vision)
-                </strong>{" "}
-                <br />• Directed Notably to a 1st-place finish at the University
-                of Iowa Hackathon, outperforming 200+ competitors by leveraging
-                advanced <span className="technicalHighlight">ML/AI</span> and
-                cloud solutions. <br />• Engineered seamless integrations of{" "}
-                <span className="technicalHighlight">OpenAI GPT-3.5</span> and{" "}
-                <span className="technicalHighlight">
-                  Google Cloud Vision APIs
-                </span>
-                .
-              </Typography>
-              <br />
-            </Paper>
-          </Grid>
+
 
           <Grid item xs={12}>
             <Paper elevation={3} className="paper">
@@ -233,27 +181,29 @@ function Resume() {
                 Skills
               </Typography>
               <Typography variant="body1" className="sectionContent">
-                • Programming:{" "}
+                • Networking & Infrastructure:{" "}
                 <span className="technicalHighlight">
-                  Python, Java, C++, JavaScript, Ruby, SQL, Go, HTML/CSS
+                  Kubernetes, Docker, Virtualization, CI/CD Pipelines, RESTful APIs
                 </span>{" "}
-                <br />• Frameworks & Databases:{" "}
+                <br />• Programming & Automation:{" "}
                 <span className="technicalHighlight">
-                  React, React Native, Node.js, Express.js, MySQL, Firebase,
-                  MongoDB
+                  Python, Java, JavaScript, SQL, Git, Scripting (Bash, Rego), Automation Workflows
                 </span>{" "}
-                <br />• DevOps & Version Control:{" "}
+                <br />• AI & Data Systems:{" "}
                 <span className="technicalHighlight">
-                  Kubernetes, Docker, CI/CD, Git
+                  Machine Learning, OpenAI GPT, NLP, LLM Tools, Data Pipelines, Visualization
                 </span>{" "}
-                <br />• Specialized Technologies:{" "}
+                <br />• Web & System Development:{" "}
                 <span className="technicalHighlight">
-                  Machine Learning, OpenCV, OpenAI GPT, Computer Vision
+                  React, Node.js, Express.js, Firebase, MongoDB, MySQL
                 </span>{" "}
-                <br />• Management & Soft Skills:{" "}
+                <br />• Sales Engineering & Strategy:{" "}
                 <span className="businessHighlight">
-                  Agile, Scrum, Effective Communication, Customer Service,
-                  Stakeholder Management
+                  Solution Storytelling, Technical Enablement, Competitive Positioning, GTM Alignment
+                </span>{" "}
+                <br />• Soft Skills:{" "}
+                <span className="businessHighlight">
+                  Cross-Functional Communication, Agile & Scrum, Customer Discovery, Technical Writing, Public Speaking
                 </span>
               </Typography>
             </Paper>
