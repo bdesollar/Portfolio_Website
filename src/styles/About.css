@@ -1,74 +1,165 @@
+@import "./variables.css";
+
 .about-section {
-  padding: 100px 0; /* Add more spacing between sections */
+  padding: var(--space-24) 0;
   text-align: center;
-  background-image: url("../assets/img/projectsBackground1.jpg"); /* Add a background image */
-  background-size: cover; /* Ensure the background image covers the entire section */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  min-height: calc(
-    100vh - 64px - 80px
-  ); /* Ensure the section takes up the full viewport height minus the navbar and footer heights */
+  background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-50) 50%, var(--primary-100) 100%);
+  position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: calc(var(--space-24) + 64px); /* Account for fixed navbar */
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/img/projectsBackground1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.03;
+  z-index: -1;
 }
 
 .aboutSection {
-  padding: 20px;
-  text-align: left; /* Align text to the left */
+  padding: var(--space-8);
+  text-align: left;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--primary-200);
 }
 
 .profileImage {
-  width: 100%; /* Make the image responsive */
-  max-width: 100%; /* Set a maximum width */
-  border-radius: 10% !important;
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--radius-2xl) !important;
   height: auto;
-  margin: 0 auto 20px auto; /* Add margin below the image */
+  margin: 0 auto var(--space-6) auto !important;
   display: block;
+  box-shadow: var(--shadow-lg) !important;
+  transition: transform var(--transition-normal) !important;
+  border: 3px solid var(--primary-100) !important;
+}
+
+.profileImage:hover {
+  transform: scale(1.02) !important;
 }
 
 .aboutMeTitle {
-  font-weight: bold !important;
-  margin-bottom: 20px;
-  color: #000000 !important; /* Black color for title */
-  font-size: 2em !important;
+  font-family: var(--font-family-primary) !important;
+  font-weight: var(--font-weight-bold) !important;
+  margin-bottom: var(--space-6) !important;
+  color: var(--primary-900) !important;
+  font-size: clamp(1.8rem, 4vw, 2.2rem) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  position: relative !important;
+}
+
+.aboutMeTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -var(--space-2);
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  border-radius: var(--radius-sm);
 }
 
 .aboutMe {
-  margin-top: 16px !important;
-  color: #000000 !important; /* Black color for text */
-  font-size: 1.2em !important;
+  font-family: var(--font-family-primary) !important;
+  font-weight: var(--font-weight-normal) !important;
+  color: var(--primary-700) !important;
+  font-size: clamp(1rem, 2.5vw, 1.2rem) !important;
+  line-height: 1.7 !important;
+  margin-top: var(--space-4) !important;
 }
 
 .hobbiesSection,
 .interestsSection {
-  padding: 20px;
-  margin-top: 40px;
+  padding: var(--space-8);
+  margin-top: var(--space-12);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--primary-200);
 }
 
 .sectionTitle {
-  font-weight: bold !important;
-  margin-bottom: 20px;
-  color: #000000 !important; /* Black color for title */
-  font-size: 2.5em !important;
+  font-family: var(--font-family-primary) !important;
+  font-weight: var(--font-weight-bold) !important;
+  margin-bottom: var(--space-8) !important;
+  color: var(--primary-900) !important;
+  font-size: clamp(2rem, 4vw, 2.5rem) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  position: relative !important;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -var(--space-3);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  border-radius: var(--radius-sm);
 }
 
 .hobbyItem,
 .interestItem {
   text-align: center;
+  padding: var(--space-6);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-xl);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--primary-200);
+}
+
+.hobbyItem:hover,
+.interestItem:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: var(--accent-blue);
 }
 
 .interestText {
-  color: #000000 !important; /* Black color for text */
-  font-size: 1.2em !important;
+  font-family: var(--font-family-primary) !important;
+  font-weight: var(--font-weight-medium) !important;
+  color: var(--primary-800) !important;
+  font-size: clamp(1rem, 2vw, 1.2rem) !important;
+  line-height: 1.5 !important;
+  margin-top: var(--space-3) !important;
 }
 
 .hobbyIcon,
 .interestIcon {
-  font-size: 48px !important;
-  color: #000 !important; /* Black color for icons */
-  margin-bottom: 10px;
+  font-size: 3rem !important;
+  color: var(--accent-blue) !important;
+  margin-bottom: var(--space-3) !important;
+  transition: all var(--transition-normal) !important;
+}
+
+.hobbyItem:hover .hobbyIcon,
+.interestItem:hover .interestIcon {
+  color: var(--accent-purple) !important;
+  transform: scale(1.1) !important;
 }
 
 /* Media Queries for smaller devices */

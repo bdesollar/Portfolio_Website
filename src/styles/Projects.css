@@ -1,43 +1,72 @@
+@import "./variables.css";
+
 .projects-section {
   text-align: center;
-  background-image: url("../assets/img/projectsBackground1.jpg"); /* Add a background image */
-  background-size: cover; /* Ensure the background image covers the entire section */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  min-height: calc(
-    100vh - 64px - 80px
-  ); /* Ensure the section takes up the full viewport height minus the navbar and footer heights */
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--primary-100) 50%, var(--primary-50) 100%);
+  position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: var(--space-20) 0;
+  padding-top: calc(var(--space-20) + 64px); /* Account for fixed navbar */
+}
+
+.projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/img/projectsBackground1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.03;
+  z-index: -1;
 }
 
 .projectTitle {
-  text-align: center !important;
-  justify-content: center !important;
-  font-weight: bold !important;
-  font-style: italic !important;
-  font-size: 3em !important; /* Larger font size for the title */
-  color: rgb(0, 0, 0); /* White color for the title */
-  font-family: "Roboto", sans-serif; /* Stylish font */
+  font-family: var(--font-family-primary) !important;
+  font-weight: var(--font-weight-bold) !important;
+  color: var(--primary-900) !important;
+  font-size: clamp(2.5rem, 5vw, 3.5rem) !important;
+  margin-bottom: var(--space-12) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em !important;
+  position: relative !important;
+}
+
+.projectTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  border-radius: var(--radius-sm);
 }
 
 .projectCard {
   opacity: 0;
-  transform: translateY(20px) scale(0.98) !important;
-  transition:
-    opacity 0.6s ease-out,
-    transform 0.6s ease-out;
-  height: 80vh !important; /* Set a fixed height for project cards */
-  width: 80% !important; /* Set a fixed width for project cards */
-  margin-bottom: 20px !important; /* Add margin between project cards */
-  text-align: left !important; /* Align text to the left */
+  transform: translateY(30px) scale(0.95) !important;
+  transition: 
+    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  height: auto !important;
+  width: 90% !important;
+  max-width: 1200px !important;
+  margin-bottom: var(--space-12) !important;
+  text-align: left !important;
 }
 
 .projectCard.in-view {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1) !important;
 }
 
 .funnyMessage {

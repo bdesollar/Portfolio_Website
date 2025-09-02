@@ -3,7 +3,6 @@ import {
   Card,
   CardActions,
   CardContent,
-  CardMedia,
   Button,
   Typography,
   Grid,
@@ -27,13 +26,14 @@ function ProjectCard({ project }) {
       { threshold: 0.1 },
     );
 
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
+    const currentCardRef = cardRef.current;
+    if (currentCardRef) {
+      observer.observe(currentCardRef);
     }
 
     return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
+      if (currentCardRef) {
+        observer.unobserve(currentCardRef);
       }
     };
   }, []);
@@ -103,30 +103,33 @@ function ProjectCard({ project }) {
       </Grid>
       <CardActions className="cardActions">
         <Button
-          size="small"
-          color="black"
+          size="medium"
           href={project.githubLink}
           target="_blank"
           startIcon={<GitHubIcon />}
+          className="projectButton"
+          variant="outlined"
         >
           View on Github
         </Button>
         {project.thesisLink && (
           <Button
-            size="small"
-            color="black"
+            size="medium"
             href={project.thesisLink}
             target="_blank"
+            className="projectButton"
+            variant="outlined"
           >
             Download Thesis
           </Button>
         )}
         {project.websiteLink && (
           <Button
-            size="small"
-            color="black"
+            size="medium"
             href={project.websiteLink}
             target="_blank"
+            className="projectButton"
+            variant="contained"
           >
             Visit Website
           </Button>

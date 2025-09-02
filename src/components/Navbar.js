@@ -1,19 +1,20 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
 
 function Navbar() {
   return (
-    <AppBar position="static" style={{ backgroundColor: "#000" }}>
+    <AppBar position="fixed" className="appBar">
       <Toolbar>
-        <Typography variant="h6" style={{ flexGrow: 1, color: "#fff" }}>
-          My Portfolio
+        <Typography variant="h6" className="title">
+          Benjamin DeSollar
         </Typography>
         <Button
           color="inherit"
           component={Link}
           to="/"
-          style={{ color: "#fff" }}
+          className="navButton"
         >
           Home
         </Button>
@@ -21,7 +22,7 @@ function Navbar() {
           color="inherit"
           component={Link}
           to="/about"
-          style={{ color: "#fff" }}
+          className="navButton"
         >
           About
         </Button>
@@ -29,7 +30,7 @@ function Navbar() {
           color="inherit"
           component={Link}
           to="/resume"
-          style={{ color: "#fff" }}
+          className="navButton"
         >
           Resume
         </Button>
@@ -37,7 +38,7 @@ function Navbar() {
           color="inherit"
           component={Link}
           to="/projects"
-          style={{ color: "#fff" }}
+          className="navButton"
         >
           Projects
         </Button>

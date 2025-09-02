@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Element } from "react-scroll";
 import {
   Typography,
@@ -9,20 +9,13 @@ import {
   Link,
 } from "@material-ui/core";
 import { ReactTyped } from "react-typed";
-import profilePicture from "../assets/img/profile.jpeg"; // Adjust the path to your image
+import profilePicture from "../assets/img/profile.jpeg";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
-import ChatIcon from "@material-ui/icons/Chat";
-import Contact from "./Contact";
 import "../styles/Home.css";
 
 function Home() {
-  const [isChatOpen, setIsChatOpen] = useState(false);
-
-  const toggleChat = () => {
-    setIsChatOpen(!isChatOpen);
-  };
 
   return (
     <Element name="home" className="home-section">
@@ -31,7 +24,7 @@ function Home() {
           <Grid item xs={12} md={6}>
             <Avatar
               src={profilePicture}
-              alt="Profile Picture"
+              alt="Benjamin DeSollar"
               className="profileImageLarge"
             />
           </Grid>

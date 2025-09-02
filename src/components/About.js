@@ -18,7 +18,7 @@ function About() {
           <Grid item xs={12} md={6}>
             <img
               src={profilePicture}
-              alt="Profile Picture"
+              alt="Benjamin DeSollar"
               className="profileImage"
             />
           </Grid>
