@@ -51,14 +51,14 @@ function Resume() {
               </Typography>
               <br />
               <Typography variant="body1" className="sectionContent">
-                <strong>Intel Corporation, Durham, NC</strong> <br />
+                <strong>Intel Corporation, Raleigh, NC</strong> <br />
                 Global Alliances / Inside Sales Program Manager (Sales and Marketing Rotational Program){" "}
                 <br />
                 <em>Apr 2024 - Present</em> <br />• Drive technical enablement
                 for Lenovo's Inside Sales organization, leading platform trainings,
-                competitive analysis, and AI capability positioning to accelerate
+                competitive analysis, and <span className="technicalHighlight">AI capability positioning</span> to accelerate
                 adoption of Intel's Commercial Client solutions. <br />• Manage
-                execution of a multi-billion dollar MOU between Intel and Lenovo,
+                execution of a <span className="businessHighlight">multi-billion dollar MOU</span> between Intel and Lenovo,
                 aligning stakeholders across business, technical, and marketing
                 teams on AI roadmap milestones, product commitments, and sales targets.
               </Typography>
@@ -68,21 +68,18 @@ function Resume() {
                 AI Product Manager (Sales and Marketing Rotational Program){" "}
                 <br />
                 <em>Aug 2024 - Apr 2024</em> <br />• Developed and deployed
-                AI-driven analytics tools across sales and marketing functions,
+                <span className="technicalHighlight">AI-driven analytics tools</span> across sales and marketing functions,
                 reducing manual workflows by over 70% and accelerating data-driven
                 decision making. <br />• Collaborated with GTM and engineering
-                teams to operationalize LLMs for document retrieval and partner
+                teams to operationalize <span className="technicalHighlight">LLMs</span> for document retrieval and partner
                 intelligence, building scalable internal tools with real user impact.
               </Typography>
               <br />
               <Typography variant="body1" className="sectionContent">
                 <strong>University of Iowa, Iowa City, IA</strong> <br />
                 Graduate Research Assistant <br />
-                <em>Aug 2023 - Jul 2024</em> <br />• Designed and deployed the{" "}
-                <span className="technicalHighlight">
-                  AudioGene Translational Dashboard (AGTD)
-                </span>
-                , integrating{" "}
+                <em>Aug 2023 - Jul 2024</em> <br />• Designed and deployed the
+                AudioGene Translational Dashboard (AGTD), integrating{" "}
                 <span className="technicalHighlight">machine learning</span> and
                 data visualization to improve genetic diagnostics for hearing loss patients. <br />•
                 Addressed real-world challenges of class imbalance, data sparsity, and
@@ -133,7 +130,7 @@ function Resume() {
 
           <Grid item xs={12}>
             <Paper elevation={3} className="paper">
-              <Typography variant="h5" className="sectionTitle">
+              <Typography variant="h5" className="sectionTitle highlight">
                 Teaching Experience
               </Typography>
               <Typography variant="body1" className="sectionContent">
@@ -177,34 +174,16 @@ function Resume() {
 
           <Grid item xs={12}>
             <Paper elevation={3} className="paper">
-              <Typography variant="h5" className="sectionTitle">
+              <Typography variant="h5" className="sectionTitle highlight">
                 Skills
               </Typography>
               <Typography variant="body1" className="sectionContent">
-                • Networking & Infrastructure:{" "}
-                <span className="technicalHighlight">
-                  Kubernetes, Docker, Virtualization, CI/CD Pipelines, RESTful APIs
-                </span>{" "}
-                <br />• Programming & Automation:{" "}
-                <span className="technicalHighlight">
-                  Python, Java, JavaScript, SQL, Git, Scripting (Bash, Rego), Automation Workflows
-                </span>{" "}
-                <br />• AI & Data Systems:{" "}
-                <span className="technicalHighlight">
-                  Machine Learning, OpenAI GPT, NLP, LLM Tools, Data Pipelines, Visualization
-                </span>{" "}
-                <br />• Web & System Development:{" "}
-                <span className="technicalHighlight">
-                  React, Node.js, Express.js, Firebase, MongoDB, MySQL
-                </span>{" "}
-                <br />• Sales Engineering & Strategy:{" "}
-                <span className="businessHighlight">
-                  Solution Storytelling, Technical Enablement, Competitive Positioning, GTM Alignment
-                </span>{" "}
-                <br />• Soft Skills:{" "}
-                <span className="businessHighlight">
-                  Cross-Functional Communication, Agile & Scrum, Customer Discovery, Technical Writing, Public Speaking
-                </span>
+                • Networking & Infrastructure: Kubernetes, Docker, Virtualization, CI/CD Pipelines, RESTful APIs{" "}
+                <br />• Programming & Automation: Python, Java, JavaScript, SQL, Git, Scripting (Bash, Rego), Automation Workflows{" "}
+                <br />• AI & Data Systems: Machine Learning, OpenAI GPT, NLP, LLM Tools, Data Pipelines, Visualization{" "}
+                <br />• Web & System Development: React, Node.js, Express.js, Firebase, MongoDB, MySQL{" "}
+                <br />• Sales Engineering & Strategy: Solution Storytelling, Technical Enablement, Competitive Positioning, GTM Alignment{" "}
+                <br />• Soft Skills: Cross-Functional Communication, Agile & Scrum, Customer Discovery, Technical Writing, Public Speaking
               </Typography>
             </Paper>
           </Grid>

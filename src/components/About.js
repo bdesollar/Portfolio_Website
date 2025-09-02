@@ -7,6 +7,7 @@ import PeopleIcon from "@material-ui/icons/People";
 import CloudIcon from "@material-ui/icons/Cloud";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 import ChipIcon from "@material-ui/icons/Memory"; // Use MemoryIcon as a placeholder for a chip icon
+import TrendingUpIcon from "@material-ui/icons/TrendingUp";
 import profilePicture from "../assets/img/profile.jpeg";
 import "../styles/About.css";
 
@@ -30,15 +31,18 @@ function About() {
               <Typography className="aboutMe" variant="body1" gutterBottom>
                 My name is Benjamin DeSollar, and I hold a Master's degree in
                 Electrical and Computer Engineering from the University of Iowa,
-                with a focus in Software Engineering. I am dedicated to
-                utilizing my expertise to assist others in achieving their goals
-                and generating actionable insights. Beginning in August 2024, I
-                will be joining Intel as part of the Sales and Marketing
-                Rotational Program (SMRP) in a technical capacity. I am
-                committed to continuous learning and growth, and I am excited to
-                see where my career takes me! Do not hesitate to reach out to me
-                and connect to discuss opportunities or to chat about
-                technology, fitness, or anything else!
+                with a focus in Software Engineering. I'm currently working in
+                Technical Sales at Intel as part of the Sales and Marketing
+                Rotational Program (SMRP), based in Raleigh, NC! I'm
+                passionate about working with cutting-edge software and AI
+                strategies within the company, while building my business acumen
+                through the sales portion of my role. I love the intersection of
+                technology and business strategy, helping clients understand how
+                AI and Intel's solutions can drive their success. I am committed
+                to continuous learning and growth, and I'm excited to see where
+                my career in technical sales takes me! Do not hesitate to reach
+                out to me and connect to discuss opportunities or to chat about
+                technology, AI, sales strategies, fitness, or anything else!
               </Typography>
             </div>
           </Grid>
@@ -78,22 +82,28 @@ function About() {
                 Interests in Tech
               </Typography>
               <Grid container spacing={3} justify="center">
-                <Grid item xs={12} sm={4} className="interestItem">
+                <Grid item xs={12} sm={3} className="interestItem">
                   <CloudIcon className="interestIcon" />
                   <Typography variant="body1" className="interestText">
                     Cloud Computing
                   </Typography>
                 </Grid>
-                <Grid item xs={12} sm={4} className="interestItem">
+                <Grid item xs={12} sm={3} className="interestItem">
                   <SmartToyIcon className="interestIcon" />
                   <Typography variant="body1" className="interestText">
-                    Advancements in AI Technologies
+                    AI Technologies & LLMs
                   </Typography>
                 </Grid>
-                <Grid item xs={12} sm={4} className="interestItem">
+                <Grid item xs={12} sm={3} className="interestItem">
                   <ChipIcon className="interestIcon" />
                   <Typography variant="body1" className="interestText">
-                    Advancements in Processors (CPUs, GPUs)
+                    Processor Innovations (CPUs, GPUs)
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sm={3} className="interestItem">
+                  <TrendingUpIcon className="interestIcon" />
+                  <Typography variant="body1" className="interestText">
+                    Technical Sales & Market Strategy
                   </Typography>
                 </Grid>
               </Grid>
