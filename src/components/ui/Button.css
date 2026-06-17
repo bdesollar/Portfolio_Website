@@ -1,0 +1,96 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-family-primary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition:
+    background var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    transform var(--transition-fast),
+    box-shadow var(--transition-normal);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--color-accent-light);
+  box-shadow: var(--shadow-accent);
+}
+
+.btn--secondary {
+  background: var(--color-surface-elevated);
+  color: var(--color-text);
+  border-color: var(--color-border-strong);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  border-color: var(--color-accent);
+  color: var(--color-accent-light);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border-strong);
+}
+
+.btn--outline:hover:not(:disabled) {
+  border-color: var(--color-accent);
+  color: var(--color-accent-light);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-text-muted);
+  padding-inline: var(--space-3);
+}
+
+.btn--ghost:hover:not(:disabled) {
+  color: var(--color-accent-light);
+}
+
+.btn--shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--shimmer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 60%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.btn--shimmer:hover::before {
+  transform: translateX(100%);
+}

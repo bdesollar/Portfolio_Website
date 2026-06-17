@@ -1,0 +1,23 @@
+.section-heading {
+  margin-bottom: var(--space-12);
+}
+
+.section-heading__label {
+  display: block;
+  margin-bottom: var(--space-3);
+}
+
+.section-heading__title {
+  margin-bottom: var(--space-4);
+}
+
+.section-heading__subtitle {
+  max-width: 56ch;
+}
+
+.section-heading__rule {
+  width: 64px;
+  height: 2px;
+  margin-top: var(--space-6);
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+}

@@ -15,10 +15,9 @@ This personal portfolio website is designed to showcase my work and provide a pl
 
 ## Technologies Used
 
-- **React**: JavaScript library for building user interfaces.
-- **Firebase**: Backend services and hosting.
-- **CSS**: Styling the website.
-- **Material-UI**: React components for faster and easier web development.
+- **Vite**: Frontend build tooling.
+- **React Router**: Client-side routing.
+- **Framer Motion**: Page and section animations.
 
 ## Getting Started
 
@@ -28,38 +27,53 @@ To get a local copy up and running, follow these steps.
 
 Make sure you have the following installed:
 
-- **Node.js**: [Download and install Node.js](https://nodejs.org/)
-- **Yarn**: [Download and install Yarn](https://yarnpkg.com/)
+- **Node.js**: [Download and install Node.js](https://nodejs.org/) (includes npm)
 
 ### Installation
 
 1. Clone the repository:
 
-   > git clone [https://github.com/YourUsername/PortfolioWebsite.git](https://github.com/bdesollar/Portfolio_Website)
+   ```bash
+   git clone https://github.com/bdesollar/Portfolio_Website
+   ```
 
 2. Navigate to the project directory:
 
-   > cd PortfolioWebsite
+   ```bash
+   cd personal_site
+   ```
 
 3. Install the dependencies:
 
-   > yarn install
+   ```bash
+   npm install
+   ```
 
 ## Running the Project
 
-To run the project locally, use the following command:
+To run the project locally:
 
-> yarn start
+```bash
+npm run dev
+```
 
-This will start the development server and open the website in your default browser. The website will automatically reload if you make any changes to the code.
+This starts the Vite development server. Open the URL shown in the terminal (typically `http://localhost:5173`).
 
 ## Building the Project
 
-To build the project for production, use the following command:
+To build the project for production:
 
-> yarn build
+```bash
+npm run build
+```
 
-This will create an optimized production build of the website in the `build` directory.
+This creates an optimized production build in the `dist` directory.
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
 
 ## Project Structure
 
@@ -96,7 +110,7 @@ PortfolioWebsite/
 │ └── ...
 ├── .gitignore
 ├── package.json
-├── yarn.lock
+├── package-lock.json
 └── README.md
 ```
 

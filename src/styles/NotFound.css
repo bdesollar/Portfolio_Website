@@ -1,43 +1,24 @@
-.notFoundContainer {
-  text-align: center !important;
-  padding: 50px !important;
-  margin-top: 50px !important;
+.not-found__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-block: var(--space-24);
+  min-height: 60vh;
+  justify-content: center;
 }
 
-.notFoundTitle {
-  font-size: 6em !important;
-  font-weight: bold !important;
-  color: #000 !important;
+.not-found__code {
+  color: var(--color-accent);
+  opacity: 0.9;
+  margin-bottom: var(--space-4);
 }
 
-.notFoundSubtitle {
-  font-size: 2em !important;
-  color: #555 !important;
-  margin-bottom: 20px !important;
+.not-found__title {
+  margin-bottom: var(--space-4);
 }
 
-.notFoundDescription {
-  font-size: 1.2em !important;
-  color: #777 !important;
-  margin-bottom: 30px !important;
-}
-
-.homeButton {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-
-/* Media Queries for smaller devices */
-@media (max-width: 768px) {
-  .notFoundTitle {
-    font-size: 3em !important;
-  }
-
-  .notFoundSubtitle {
-    font-size: 1.5em !important;
-  }
-
-  .notFoundDescription {
-    font-size: 1em !important;
-  }
+.not-found__desc {
+  margin-bottom: var(--space-8);
+  max-width: 36ch;
 }

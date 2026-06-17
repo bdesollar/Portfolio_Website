@@ -1,40 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-
 :root {
-  /* Primary Color Palette */
-  --primary-900: #0f172a;
-  --primary-800: #1e293b;
-  --primary-700: #334155;
-  --primary-600: #475569;
-  --primary-500: #64748b;
-  --primary-400: #94a3b8;
-  --primary-300: #cbd5e1;
-  --primary-200: #e2e8f0;
-  --primary-100: #f1f5f9;
-  --primary-50: #f8fafc;
+  /* Editorial dark palette */
+  --color-bg: #0a0a0b;
+  --color-bg-elevated: #111114;
+  --color-surface: #16161a;
+  --color-surface-elevated: #1c1c21;
+  --color-border: rgba(240, 235, 227, 0.08);
+  --color-border-strong: rgba(240, 235, 227, 0.16);
+  --color-text: #f0ebe3;
+  --color-text-muted: #a39e96;
+  --color-text-subtle: #6b6660;
+  --color-accent: #c4783a;
+  --color-accent-light: #d4a574;
+  --color-accent-muted: rgba(196, 120, 58, 0.15);
+  --color-accent-glow: rgba(196, 120, 58, 0.35);
 
-  /* Accent Colors */
-  --accent-blue: #3b82f6;
-  --accent-blue-light: #dbeafe;
-  --accent-green: #10b981;
-  --accent-green-light: #d1fae5;
-  --accent-purple: #8b5cf6;
-  --accent-purple-light: #ede9fe;
-  --accent-orange: #f59e0b;
-  --accent-orange-light: #fef3c7;
+  /* Legacy aliases for gradual migration */
+  --primary-900: var(--color-bg);
+  --primary-800: var(--color-surface);
+  --primary-700: var(--color-surface-elevated);
+  --primary-600: var(--color-text-subtle);
+  --primary-500: var(--color-text-muted);
+  --primary-400: var(--color-text-muted);
+  --primary-300: var(--color-border-strong);
+  --primary-200: var(--color-border);
+  --primary-100: var(--color-surface);
+  --primary-50: var(--color-bg-elevated);
+  --accent-blue: var(--color-accent);
+  --accent-blue-light: var(--color-accent-muted);
+  --accent-green: #6b9e78;
+  --accent-green-light: rgba(107, 158, 120, 0.15);
+  --accent-purple: var(--color-accent-light);
+  --accent-purple-light: var(--color-accent-muted);
+  --accent-orange: var(--color-accent);
+  --accent-orange-light: var(--color-accent-muted);
 
   /* Typography */
-  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --font-family-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-family-primary: "Source Sans 3", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-mono: "JetBrains Mono", "Fira Code", Consolas, monospace;
 
-  /* Font Weights */
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
-  /* Spacing Scale */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.82rem + 0.3vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+  --text-3xl: clamp(2rem, 1.75rem + 1.25vw, 2.75rem);
+  --text-display: clamp(2.75rem, 2rem + 3.5vw, 4.5rem);
+
+  /* Spacing */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -48,26 +68,40 @@
   --space-20: 5rem;
   --space-24: 6rem;
 
-  /* Border Radius */
+  /* Radius */
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.45);
+  --shadow-lg: 0 12px 32px rgb(0 0 0 / 0.5);
+  --shadow-xl: 0 24px 48px rgb(0 0 0 / 0.55);
+  --shadow-accent: 0 8px 32px var(--color-accent-glow);
 
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-normal: 300ms ease;
-  --transition-slow: 500ms ease;
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+  --stagger-step: 0.08s;
+  --transition-fast: var(--duration-fast) var(--ease-in-out);
+  --transition-normal: var(--duration-normal) var(--ease-in-out);
+  --transition-slow: var(--duration-slow) var(--ease-out-expo);
 
-  /* Glass Effect */
-  --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --glass-backdrop: blur(10px);
+  /* Layout */
+  --nav-height: 72px;
+  --container-max: 1200px;
+  --container-wide: 1400px;
+
+  /* Glass (subtle on dark) */
+  --glass-bg: rgba(22, 22, 26, 0.72);
+  --glass-border: var(--color-border);
+  --glass-backdrop: blur(16px);
 }

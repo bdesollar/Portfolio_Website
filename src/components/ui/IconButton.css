@@ -1,0 +1,28 @@
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition:
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    background var(--transition-normal),
+    transform var(--transition-fast);
+}
+
+.icon-btn:hover {
+  color: var(--color-accent-light);
+  border-color: var(--color-accent);
+  background: var(--color-accent-muted);
+  transform: translateY(-2px);
+}
+
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+}

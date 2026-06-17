@@ -1,192 +1,136 @@
-@import "./variables.css";
-
-.about-section {
-  padding: var(--space-24) 0;
-  padding-top: calc(var(--space-24) + 80px); /* Account for fixed navbar + extra space */
-  text-align: center;
-  background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-50) 50%, var(--primary-100) 100%);
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.about {
+  padding-bottom: var(--space-20);
 }
 
-.about-section::before {
-  content: '';
+.about__intro {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--space-16);
+  align-items: start;
+  margin-bottom: var(--space-20);
+}
+
+.about__portrait-wrap {
+  position: relative;
+}
+
+.about__portrait {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border-strong);
+}
+
+.about__portrait-wrap::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("../assets/img/projectsBackground1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.03;
+  bottom: -16px;
+  right: -16px;
+  width: 60%;
+  height: 60%;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-xl);
+  opacity: 0.3;
   z-index: -1;
 }
 
-.aboutSection {
-  padding: var(--space-8);
-  text-align: left;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: var(--radius-2xl);
-  box-shadow: var(--shadow-lg);
-  border: 1px solid var(--primary-200);
+.about__bio-title {
+  margin-bottom: var(--space-6);
 }
 
-.profileImage {
-  width: 100%;
-  max-width: 100%;
-  border-radius: var(--radius-2xl) !important;
-  height: auto;
-  margin: 0 auto var(--space-6) auto !important;
-  display: block;
-  box-shadow: var(--shadow-lg) !important;
-  transition: transform var(--transition-normal) !important;
-  border: 3px solid var(--primary-100) !important;
+.about__fragments {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.profileImage:hover {
-  transform: scale(1.02) !important;
+.about__fragment {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
-.aboutMeTitle {
-  font-family: var(--font-family-primary) !important;
-  font-weight: var(--font-weight-bold) !important;
-  margin-bottom: var(--space-6) !important;
-  color: var(--primary-900) !important;
-  font-size: clamp(1.8rem, 4vw, 2.2rem) !important;
-  line-height: 1.2 !important;
-  letter-spacing: -0.01em !important;
-  position: relative !important;
+.about__fragment:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-.aboutMeTitle::after {
-  content: '';
-  position: absolute;
-  bottom: -var(--space-2);
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary-900), var(--primary-600), var(--primary-400));
-  border-radius: var(--radius-sm);
+.about__section {
+  margin-bottom: var(--space-16);
 }
 
-.aboutMe {
-  font-family: var(--font-family-primary) !important;
-  font-weight: var(--font-weight-normal) !important;
-  color: var(--primary-700) !important;
-  font-size: clamp(1rem, 2.5vw, 1.2rem) !important;
-  line-height: 1.7 !important;
-  margin-top: var(--space-4) !important;
+.about__section-title {
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
 }
 
-.hobbiesSection,
-.interestsSection {
-  padding: var(--space-8);
-  margin-top: var(--space-12);
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: var(--radius-2xl);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--primary-200);
+.about__grid {
+  display: grid;
+  gap: var(--space-4);
 }
 
-.sectionTitle {
-  font-family: var(--font-family-primary) !important;
-  font-weight: var(--font-weight-bold) !important;
-  margin-bottom: var(--space-8) !important;
-  color: var(--primary-900) !important;
-  font-size: clamp(2rem, 4vw, 2.5rem) !important;
-  line-height: 1.2 !important;
-  letter-spacing: -0.01em !important;
-  position: relative !important;
+.about__grid--3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.sectionTitle::after {
-  content: '';
-  position: absolute;
-  bottom: -var(--space-3);
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary-900), var(--primary-600), var(--primary-400));
-  border-radius: var(--radius-sm);
+.about__grid--4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.hobbyItem,
-.interestItem {
-  text-align: center;
+.about-card {
   padding: var(--space-6);
-  margin: var(--space-1);
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: var(--radius-xl);
-  transition: all var(--transition-normal);
-  border: 1px solid var(--primary-200);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition:
+    border-color var(--transition-normal),
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
 
-.hobbyItem:hover,
-.interestItem:hover {
+.about-card:hover {
+  border-color: var(--color-accent);
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-  background: rgba(255, 255, 255, 0.9);
-  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-md);
 }
 
-.interestText {
-  font-family: var(--font-family-primary) !important;
-  font-weight: var(--font-weight-medium) !important;
-  color: var(--primary-800) !important;
-  font-size: clamp(1rem, 2vw, 1.2rem) !important;
-  line-height: 1.5 !important;
-  margin-top: var(--space-3) !important;
+.about-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: var(--space-4);
+  color: var(--color-accent-light);
+  background: var(--color-accent-muted);
+  border-radius: var(--radius-md);
 }
 
-.hobbyIcon,
-.interestIcon {
-  font-size: 3rem !important;
-  color: var(--accent-blue) !important;
-  margin-bottom: var(--space-3) !important;
-  transition: all var(--transition-normal) !important;
+@media (max-width: 900px) {
+  .about__intro {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .about__portrait {
+    max-width: 320px;
+    margin-inline: auto;
+  }
+
+  .about__grid--3,
+  .about__grid--4 {
+    grid-template-columns: 1fr;
+  }
 }
 
-.hobbyItem:hover .hobbyIcon,
-.interestItem:hover .interestIcon {
-  color: var(--accent-purple) !important;
-  transform: scale(1.1) !important;
-}
-
-/* Media Queries for smaller devices */
-@media (max-width: 768px) {
-  .about-section {
-    padding: var(--space-16) 0;
-    padding-top: calc(var(--space-16) + 100px); /* Extra space for mobile navbar */
+@media (min-width: 601px) and (max-width: 900px) {
+  .about__grid--3 {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .aboutMeTitle {
-    font-size: 1.5em !important;
-  }
-
-  .aboutMe {
-    font-size: 1em !important;
-  }
-
-  .sectionTitle {
-    font-size: 2em !important;
-  }
-
-  .interestText {
-    font-size: 1em !important;
-  }
-
-  .hobbyIcon,
-  .interestIcon {
-    font-size: 36px !important;
+  .about__grid--4 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
