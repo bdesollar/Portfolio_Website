@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { MessageCircle } from "lucide-react";
@@ -55,6 +56,7 @@ function App() {
         <MessageCircle aria-hidden="true" />
       </button>
       <Contact isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
+      <Analytics />
     </Router>
   );
 }
