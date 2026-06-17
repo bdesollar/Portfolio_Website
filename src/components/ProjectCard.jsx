@@ -6,34 +6,22 @@ import "../styles/ProjectCard.css";
 function ProjectCard({ project }) {
   return (
     <Card className="project-card card--interactive">
-      <div className="project-card__inner">
-        <div className="project-card__media">
-          <img
-            src={project.logo}
-            alt={`${project.name} logo`}
-            className="project-card__logo"
-            loading="lazy"
-            width={160}
-            height={160}
-          />
+      <div className="project-card__content">
+        <Typography as="h3" variant="h3" className="project-card__name">
+          {project.name}
+        </Typography>
+        <Typography as="p" variant="body" className="project-card__tagline">
+          {project.tagline}
+        </Typography>
+        <div className="project-card__highlights" role="list">
+          {project.highlights.map((item) => (
+            <span key={item} className="project-card__chip" role="listitem">
+              {item}
+            </span>
+          ))}
         </div>
-        <div className="project-card__content">
-          <Typography as="h3" variant="h3" className="project-card__name">
-            {project.name}
-          </Typography>
-          <Typography as="p" variant="body" className="project-card__tagline">
-            {project.tagline}
-          </Typography>
-          <div className="project-card__highlights" role="list">
-            {project.highlights.map((item) => (
-              <span key={item} className="project-card__chip" role="listitem">
-                {item}
-              </span>
-            ))}
-          </div>
-          <div className="project-card__tech">
-            <TechStackIcons techs={project.techs} />
-          </div>
+        <div className="project-card__tech">
+          <TechStackIcons techs={project.techs} />
         </div>
       </div>
 

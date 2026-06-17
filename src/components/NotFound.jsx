@@ -12,7 +12,7 @@ function NotFound() {
           Page Not Found
         </Typography>
         <Typography as="p" variant="body" className="not-found__desc">
-          Page not found
+          This Page Could Not Be Found
         </Typography>
         <Button to="/" variant="primary">
           Return Home

@@ -72,7 +72,7 @@ function Contact({ isOpen, onClose }) {
           ) : (
             <>
               <Typography as="p" variant="body" className="contact-drawer__intro">
-                Questions · opportunities · collaboration
+                Questions · Opportunities · Collaboration
               </Typography>
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="contact-form__field">

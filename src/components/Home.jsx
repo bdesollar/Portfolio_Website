@@ -46,11 +46,11 @@ function Home() {
               Portfolio
             </Typography>
             <Typography as="h1" variant="display" className="home__headline">
-              Technical sales{" "}
+              Technical Sales{" "}
               <span className="home__headline-dot" aria-hidden="true">·</span>{" "}
-              product{" "}
+              Product{" "}
               <span className="home__headline-dot" aria-hidden="true">·</span>{" "}
-              engineering
+              Engineering
             </Typography>
             <Typography as="p" variant="h3" className="home__name">
               Benjamin DeSollar

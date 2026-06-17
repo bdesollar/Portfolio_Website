@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import resume from "../assets/pdf/Ben_DeSollar_Resume.pdf";
+import DateRange from "./ui/DateRange";
 import {
   Button,
   Card,
@@ -10,7 +11,6 @@ import {
   Typography,
 } from "./ui";
 import { useInViewReveal } from "../hooks/useInViewReveal";
-import { formatDateRange } from "../utils/copy";
 import { fadeUp } from "../utils/motion";
 import "../styles/Resume.css";
 
@@ -46,7 +46,7 @@ function TimelineBlock({ title, children, index }) {
   );
 }
 
-function ResumeEntry({ org, role, dates, highlights = [] }) {
+function ResumeEntry({ org, role, start, end = "Present", highlights = [] }) {
   return (
     <div className="resume-entry">
       <Typography as="p" variant="body" className="resume-entry__org">
@@ -56,7 +56,7 @@ function ResumeEntry({ org, role, dates, highlights = [] }) {
         {role}
       </Typography>
       <Typography as="p" variant="mono" className="resume-entry__dates">
-        {dates}
+        <DateRange start={start} end={end} />
       </Typography>
       {highlights.length > 0 && <HighlightChips items={highlights} />}
     </div>
@@ -94,19 +94,21 @@ function Resume() {
   return (
     <PageShell className="resume">
       <Container maxWidth="lg">
-        <SectionHeading label="Resume" title="Experience and credentials" />
+        <SectionHeading label="Resume" title="Experience and Credentials" />
 
         <div className="timeline">
           <TimelineBlock title="Education" index={0}>
             <ResumeEntry
               org="The University of Iowa, Iowa City, IA"
               role="Master of Science, Electrical and Computer Engineering"
-              dates={formatDateRange("Aug 2022", "May 2024")}
+              start="Aug 2022"
+              end="May 2024"
             />
             <ResumeEntry
               org="The University of Iowa, Iowa City, IA"
               role="Bachelor of Science in Engineering, Computer Science and Engineering"
-              dates={formatDateRange("Aug 2019", "May 2023")}
+              start="Aug 2019"
+              end="May 2023"
             />
           </TimelineBlock>
 
@@ -114,78 +116,84 @@ function Resume() {
             <ResumeEntry
               org="Pendo"
               role="Customer Engineer"
-              dates={formatDateRange("Apr 2026")}
+              start="Apr 2026"
               highlights={[
-                "Mid market accounts",
-                "Pre and post sales",
-                "Client relationships",
-                "Trials and demos",
-                "Product adoption",
+                "Mid Market Accounts",
+                "Pre and Post Sales",
+                "Client Relationships",
+                "Trials and Demos",
+                "Product Adoption",
               ]}
             />
             <ResumeEntry
               org="Pendo"
               role="Sales Engineer"
-              dates={formatDateRange("Nov 2025", "Apr 2026")}
+              start="Nov 2025"
+              end="Apr 2026"
               highlights={[
-                "Pre sales",
-                "Product demos",
+                "Pre Sales",
+                "Product Demos",
                 "Trials",
-                "Technical evaluations",
-                "Solution fit",
+                "Technical Evaluations",
+                "Solution Fit",
               ]}
             />
             <ResumeEntry
               org="Intel Corporation, Raleigh, NC"
               role="Global Alliances / Inside Sales Program Manager (SMRP)"
-              dates={formatDateRange("Apr 2024", "Nov 2025")}
+              start="Apr 2024"
+              end="Nov 2025"
               highlights={[
-                "Lenovo inside sales enablement",
-                "Platform training",
-                "Competitive analysis",
-                "AI capability positioning",
-                "Multi billion dollar MOU execution",
+                "Lenovo Inside Sales Enablement",
+                "Platform Training",
+                "Competitive Analysis",
+                "AI Capability Positioning",
+                "Multi Billion Dollar MOU Execution",
               ]}
             />
             <ResumeEntry
               org="Intel Corporation, Chandler, AZ"
               role="AI Product Manager (SMRP)"
-              dates={formatDateRange("Aug 2023", "Apr 2024")}
+              start="Aug 2023"
+              end="Apr 2024"
               highlights={[
-                "AI analytics tooling",
-                "LLM workflows",
-                "70% manual workflow reduction",
-                "GTM and engineering collaboration",
+                "AI Analytics Tooling",
+                "LLM Workflows",
+                "70% Manual Workflow Reduction",
+                "GTM and Engineering Collaboration",
               ]}
             />
             <ResumeEntry
               org="University of Iowa, Iowa City, IA"
               role="Graduate Research Assistant"
-              dates={formatDateRange("Aug 2023", "Jul 2024")}
+              start="Aug 2023"
+              end="Jul 2024"
               highlights={[
                 "AudioGene Translational Dashboard",
-                "Machine learning integration",
-                "Genetic diagnostics visualization",
+                "Machine Learning Integration",
+                "Genetic Diagnostics Visualization",
               ]}
             />
             <ResumeEntry
               org="AMD, Fort Collins, CO"
               role="Software Engineer Intern"
-              dates={formatDateRange("May 2023", "Aug 2023")}
+              start="May 2023"
+              end="Aug 2023"
               highlights={[
-                "Three app consolidation",
-                "60% team efficiency gain",
-                "Cross functional chip development",
+                "Three App Consolidation",
+                "60% Team Efficiency Gain",
+                "Cross Functional Chip Development",
               ]}
             />
             <ResumeEntry
               org="John Deere, Moline, IL"
               role="Software Engineer Intern"
-              dates={formatDateRange("May 2022", "Aug 2022")}
+              start="May 2022"
+              end="Aug 2022"
               highlights={[
-                "Kubernetes security policies",
-                "50% operational efficiency gain",
-                "Rego policy integration",
+                "Kubernetes Security Policies",
+                "50% Operational Efficiency Gain",
+                "Rego Policy Integration",
               ]}
             />
           </TimelineBlock>
@@ -194,11 +202,12 @@ function Resume() {
             <ResumeEntry
               org="UIowa Hyperloop Club, Iowa City, IA"
               role="Executive Board / Systems Lead"
-              dates={formatDateRange("Aug 2020", "Dec 2022")}
+              start="Aug 2020"
+              end="Dec 2022"
               highlights={[
-                "15 member team leadership",
-                "SpaceX Hyperloop challenge",
-                "$5,000 funding secured",
+                "15 Member Team Leadership",
+                "SpaceX Hyperloop Challenge",
+                "$5,000 Funding Secured",
               ]}
             />
           </TimelineBlock>
@@ -207,11 +216,12 @@ function Resume() {
             <ResumeEntry
               org="University of Iowa, Iowa City, IA"
               role="Teaching Assistant"
-              dates={formatDateRange("Aug 2021", "May 2023")}
+              start="Aug 2021"
+              end="May 2023"
               highlights={[
-                "Java instruction",
-                "C++ instruction",
-                "600+ students taught",
+                "Java Instruction",
+                "C++ Instruction",
+                "600+ Students Taught",
               ]}
             />
           </TimelineBlock>
@@ -220,11 +230,12 @@ function Resume() {
             <ResumeEntry
               org="Omnilense, Iowa City, IA"
               role="Cofounder and CTO"
-              dates={formatDateRange("Jul 2022", "Jun 2023")}
+              start="Jul 2022"
+              end="Jun 2023"
               highlights={[
-                "Facial recognition glasses",
-                "Social platform integration",
-                "$15,300 funding secured",
+                "Facial Recognition Glasses",
+                "Social Platform Integration",
+                "$15,300 Funding Secured",
               ]}
             />
           </TimelineBlock>

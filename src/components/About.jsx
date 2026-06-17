@@ -21,21 +21,21 @@ import "../styles/About.css";
 const bioFragments = [
   "M.S. Electrical and Computer Engineering · University of Iowa",
   "Customer Engineer at Pendo",
-  "Pre and post sales for mid market SaaS",
-  "Background in AI product, Intel SMRP, and software engineering",
+  "Pre and Post Sales for Mid Market SaaS",
+  "Background in AI Product, Intel SMRP, and Software Engineering",
 ];
 
 const hobbies = [
-  { icon: Dumbbell, label: "Working out" },
+  { icon: Dumbbell, label: "Working Out" },
   { icon: BookOpen, label: "Stormlight Archives" },
-  { icon: Users, label: "Friends and community" },
+  { icon: Users, label: "Friends and Community" },
 ];
 
 const interests = [
-  { icon: Cloud, label: "Cloud computing" },
+  { icon: Cloud, label: "Cloud Computing" },
   { icon: Bot, label: "AI and LLMs" },
   { icon: Cpu, label: "CPUs and GPUs" },
-  { icon: TrendingUp, label: "Technical sales and strategy" },
+  { icon: TrendingUp, label: "Technical Sales and Strategy" },
 ];
 
 function AboutCard({ icon: Icon, label }) {
@@ -64,7 +64,7 @@ function About() {
           <motion.div variants={fadeUp}>
             <SectionHeading
               label="About"
-              title="The person behind the work"
+              title="The Person Behind the Work"
             />
           </motion.div>
 
@@ -81,7 +81,7 @@ function About() {
             </motion.div>
             <motion.div className="about__bio" variants={fadeUp}>
               <Typography as="h1" variant="h2" className="about__bio-title">
-                About me
+                About Me
               </Typography>
               <div className="about__fragments">
                 {bioFragments.map((line) => (
@@ -111,7 +111,7 @@ function About() {
 
           <motion.section className="about__section" variants={fadeUp}>
             <Typography as="h2" variant="h3" className="about__section-title">
-              Interests in tech
+              Interests in Tech
             </Typography>
             <div className="about__grid about__grid--4">
               {interests.map((item) => (
